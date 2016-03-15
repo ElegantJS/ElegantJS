@@ -1,2 +1,2 @@
 # ElegantJS
-public repositiry of ElegantJS team for IFE 
+public repository of ElegantJS team for IFE 
