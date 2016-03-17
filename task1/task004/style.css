@@ -1,0 +1,37 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+body:before,
+body:after {
+ 	 content: "";
+  	display: table;
+}
+#main{
+	width: 400px;
+	height:200px;
+	background-color: #ccc;
+	position: absolute;
+	left:50%;
+	top:50%;
+	overflow: hidden;
+	margin:-100px 0 0 -200px;
+}
+#main h2{
+	margin: 70px 0 0 160px;;
+}
+#sub1,#sub2{
+	width: 100px;
+	height:100px;
+	background-color: #fc0;
+	border-radius: 50%;
+	position: absolute;
+}
+#sub1{
+	left:-50px;
+	top:-50px;
+}
+#sub2{
+	right:-50px;
+	bottom:-50px;
+}
