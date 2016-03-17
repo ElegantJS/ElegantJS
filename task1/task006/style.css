@@ -101,7 +101,7 @@ body{
 	font-family: "Microsoft YaHei";
 	font-style: italic;
 	margin-left: -15px;
-
+	line-height: 116px;
 }
 #main #line-1 .PC-title .Num-32{
 	font-size: 55px;
@@ -125,7 +125,7 @@ body{
 }
 /*line-2第二块样式*/
 #main #line-2{
-	margin: 10px 0 60px 0;
+	margin: 30px 0 60px 0;
 	overflow: hidden;
 }
 #main #line-2 h3{
