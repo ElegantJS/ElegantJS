@@ -33,21 +33,20 @@ nav{
 	 display: -o-box;
 	display: -ms-flexbox;
 	 display: -webkit-flex;
+	 display: -moz-box;
 	 display: flex;
 	-webkit-flex-flow:row nowrap;
-	    -ms-flex-flow:row nowrap;
-	        flex-flow:row nowrap;
-	felx-derection:row;
-	-webkit-flex-wrap:nowrap;
-	    -ms-flex-wrap:nowrap;
-	        flex-wrap:nowrap;
+	-ms-flex-flow:row nowrap;
+	-moz-flex-flow:row nowrap;
+	flex-flow:row nowrap;
 	background:#fff;
 }
 nav>p{
 	-o-box-flex: 1;
 	-ms-flex: 1;
 	-webkit-flex: 1;
-	        flex: 1;
+	-moz-box-flex: 1;
+	flex: 1;
 	text-align: center;
 	line-height: 70px;
 	font-size: 20px;
@@ -69,13 +68,11 @@ nav>p:hover{
 	display: -ms-flexbox;
 	 display: -webkit-flex;
 	 display: flex;
+	  display: -moz-box;
 	-webkit-flex-flow:row nowrap;
-	    -ms-flex-flow:row nowrap;
-	        flex-flow:row nowrap;
-	felx-derection:row;
-	-webkit-flex-wrap:nowrap;
-	    -ms-flex-wrap:nowrap;
-	        flex-wrap:nowrap;
+	 -ms-flex-flow:row nowrap;
+	 -moz-flex-flow:row nowrap;
+	 flex-flow:row nowrap;
 	margin:0 10px;
 	border-bottom: 2px solid #E1E1E1;
 }
@@ -83,7 +80,8 @@ nav>p:hover{
 	-o-box-flex: 1;
 	-ms-flex: 1;
 	-webkit-flex: 1;
-	        flex: 1;
+	-moz-box-flex: 1;
+	flex: 1;
 	width:1em;
 }
 .tab .tab-content>figure img{
@@ -98,14 +96,13 @@ nav>p:hover{
 	 display: -o-box;
 	display: -ms-flexbox;
 	 display: -webkit-flex;
+	 display: -moz-box;
 	 display: flex;
 	-webkit-flex-flow:row nowrap;
-	    -ms-flex-flow:row nowrap;
-	        flex-flow:row nowrap;
-	felx-derection:row;
-	-webkit-flex-wrap:nowrap;
-	    -ms-flex-wrap:nowrap;
-	        flex-wrap:nowrap;
+	-ms-flex-flow:row nowrap;
+	-moz-flex-flow:row nowrap;
+	flex-flow:row nowrap;
+
 	width:100%;
 	padding: 10px 10px;
 	background:#fff;
@@ -116,22 +113,21 @@ nav>p:hover{
 	-o-box-flex: 1;
 	-ms-flex: 1;
 	-webkit-flex: 1;
-	        flex: 1;
+	-moz-box-flex: 1;
+	 flex: 1;
 	 display: -o-box;
 	display: -ms-flexbox;
 	 display: -webkit-flex;
+	 display: -moz-box;
 	 display: flex;
 	-webkit-flex-flow:column nowrap;
-	    -ms-flex-flow:column nowrap;
-	        flex-flow:column nowrap;
-	felx-derection:column;
-	-webkit-flex-wrap:nowrap;
-	    -ms-flex-wrap:nowrap;
-	        flex-wrap:nowrap;
+	-ms-flex-flow:column nowrap;
+	-moz-flex-flow:column nowrap;
+	flex-flow:column nowrap;
 	-moz-justify-content: space-between;
 	-webkit-justify-content: space-between;
 	-ms-flex-pack: justify;
-	    justify-content: space-between;
+	 justify-content: space-between;
 }
 .subfield>section img{
 	width:100%;
@@ -161,33 +157,30 @@ nav>p:hover{
 	 display: -o-box;
 	display: -ms-flexbox;
 	 display: -webkit-flex;
+	 display: -moz-box;
 	 display: flex;
 	-webkit-flex-flow:column nowrap;
 	-ms-flex-flow:column nowrap;
+	-moz-flex-flow:rcolumn nowrap;
 	flex-flow:column nowrap;
-	felx-derection:column;
-	-webkit-flex-wrap:nowrap;
-	-ms-flex-wrap:nowrap;
-	flex-wrap:nowrap;
 	border-top: 1px solid #E1E1E1;
 }
 .module .module-content .module-content-1{
 	 display: -o-box;
 	display: -ms-flexbox;
 	 display: -webkit-flex;
+	 display: -moz-box;
 	 display: flex;
 	-webkit-flex-flow:row nowrap;
 	-ms-flex-flow:row nowrap;
+	-moz-flex-flow:row nowrap;
 	 flex-flow:row nowrap;
-	felx-derection:row;
-	-webkit-flex-wrap:nowrap;
-	-ms-flex-wrap:nowrap;
-	flex-wrap:nowrap;
 }
 .module .module-content .module-content-1 .image{
 	-o-box-flex: 1;
 	-ms-flex: 1;
 	-webkit-flex: 1;
+	-moz-box-flex: 1;
 	 flex: 1;
 	margin:10px 10px 0 0;
 }
@@ -200,24 +193,23 @@ nav>p:hover{
 	-o-box-flex: 1;
 	-ms-flex: 1;
 	-webkit-flex: 1;
+	-moz-box-flex: 1;
 	flex: 1;
 	margin:10px 10px 0 0;
 	text-align: center;
 	 display: -o-box;
 	display: -ms-flexbox;
 	 display: -webkit-flex;
+	 display: -moz-box;
 	 display: flex;
 	-webkit-flex-flow:column nowrap;
 	-ms-flex-flow:column nowrap;
+	-moz-flex-flow:column nowrap;
 	flex-flow:column nowrap;
-	felx-derection:column;
-	-webkit-flex-wrap:nowrap;
-	-ms-flex-wrap:nowrap;
-	flex-wrap:nowrap;
 	-moz-justify-content: space-between;
 	-webkit-justify-content: space-between;
 	-ms-flex-pack: justify;
-	    justify-content: space-between;
+	justify-content: space-between;
 }
 .module .module-content .module-content-1 .copywriter p{
 	background:#F8F8F8;
@@ -227,19 +219,18 @@ nav>p:hover{
 	-o-box-flex: 1;
 	-ms-flex: 1;
 	-webkit-flex: 1;
+	-moz-box-flex: 1;
 	 flex: 1;
 	margin-bottom: 5%;
 	 display: -o-box;
 	display: -ms-flexbox;
 	 display: -webkit-flex;
+	 display: -moz-box;
 	 display: flex;
 	-webkit-flex-flow:column nowrap;
 	 -ms-flex-flow:column nowrap;
+	 -moz-flex-flow:column nowrap;
 	flex-flow:column nowrap;
-	felx-derection:column;
-	-webkit-flex-wrap:nowrap;
-	-ms-flex-wrap:nowrap;
-	flex-wrap:nowrap;
 	-moz-justify-content: center;
 	-webkit-justify-content: center;
 	-ms-flex-pack: center;
@@ -257,35 +248,32 @@ nav>p:hover{
 	 display: -o-box;
 	display: -ms-flexbox;
 	 display: -webkit-flex;
+	 display: -moz-box;
 	 display: flex;
 	-webkit-flex-flow:column nowrap;
 	-ms-flex-flow:column nowrap;
+	-moz-flex-flow:column nowrap;
 	flex-flow:column nowrap;
-	felx-derection:column;
-	-webkit-flex-wrap:nowrap;
-	-ms-flex-wrap:nowrap;
-	 flex-wrap:nowrap;
 }
 .article-area .article{
 	 display: -o-box;
 	display: -ms-flexbox;
 	 display: -webkit-flex;
+	 display: -moz-box;
 	 display: flex;
 	-webkit-flex-flow:row nowrap;
 	 -ms-flex-flow:row nowrap;
+	 -moz-flex-flow:column nowrap;
 	flex-flow:row nowrap;
-	felx-derection:row;
-	-webkit-flex-wrap:nowrap;
-	 -ms-flex-wrap:nowrap;
-	 flex-wrap:nowrap;
 	padding:10px 0;
 	border-bottom: 1px solid #E1E1E1;
 }
 .article-area .article .image{
-	moz-box-flex: 1;
+	-moz-box-flex: 1;
 	-o-box-flex: 1;
 	-ms-flex: 1;
 	-webkit-flex: 1;
+	-moz-box-flex: 1;
 	 flex: 1;
 	margin-right: 1em;
 }
@@ -296,18 +284,17 @@ nav>p:hover{
 	-o-box-flex: 2;
 	-ms-flex: 2;
 	-webkit-flex: 2;
+	-moz-box-flex: 2;
 	 flex: 2;
 	 display: -o-box;
 	display: -ms-flexbox;
 	 display: -webkit-flex;
+	 display: -moz-box;
 	 display: flex;
 	-webkit-flex-flow:column nowrap;
 	-ms-flex-flow:column nowrap;
+	-moz-flex-flow:column nowrap;
 	flex-flow:column nowrap;
-	felx-derection:column;
-	-webkit-flex-wrap:nowrap;
-	-ms-flex-wrap:nowrap;
-	  flex-wrap:nowrap;
 	-moz-justify-content: space-between;
 	-webkit-justify-content: space-between;
 	-ms-flex-pack: justify;
@@ -324,24 +311,23 @@ nav>p:hover{
 	 display: -o-box;
 	display: -ms-flexbox;
 	 display: -webkit-flex;
+	 display: -moz-box;
 	 display: flex;
 	-webkit-flex-flow:row nowrap;
 	 -ms-flex-flow:row nowrap;
+	 -moz-flex-flow:row nowrap;
 	 flex-flow:row nowrap;
-	felx-derection:row;
-	-webkit-flex-wrap:nowrap;
-	-ms-flex-wrap:nowrap;
-	 flex-wrap:nowrap;
 	-moz-justify-content: space-between;
 	-webkit-justify-content: space-between;
 	-ms-flex-pack: justify;
-	    justify-content: space-between;
+	justify-content: space-between;
 }
 .article-area .last-article section .image{
 	-o-box-flex: 1;
 	-ms-flex: 1;
 	-webkit-flex: 1;
-	        flex: 1;
+	-moz-box-flex: 1;
+	flex: 1;
 	margin-right: 1em;
 }
 .article-area .last-article section .image:last-child{
