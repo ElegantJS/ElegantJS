@@ -131,6 +131,9 @@ nav>p:hover{
 	-ms-flex-pack:justify;
 	box-pack:justify;
 	 justify-content:space-between;
+	 -moz-box-pack:justify;
+	  -webkit-box-pack:justify; 
+	  -o-box-pack:justify; 
 }
 .subfield>section img{
 	width:100%;
@@ -180,8 +183,8 @@ nav>p:hover{
 	display: -ms-flexbox;
 	display: flex;
 	-webkit-flex-flow:row nowrap;
-	    -ms-flex-flow:row nowrap;
-	        flex-flow:row nowrap;
+	-ms-flex-flow:row nowrap;
+	flex-flow:row nowrap;
 }
 .module .module-content .module-content-1 .image{
 	-moz-box-flex: 1;
@@ -220,6 +223,9 @@ nav>p:hover{
 	-webkit-justify-content:space-between;
 	-ms-flex-pack:justify;
 	box-pack:justify;
+	 -moz-box-pack:justify;
+	  -webkit-box-pack:justify; 
+	  -o-box-pack:justify; 
 	 justify-content:space-between;
 }
 .module .module-content .module-content-1 .copywriter p{
@@ -247,9 +253,12 @@ nav>p:hover{
 	 -webkit-box-orient:vertical;
 	 box-orient:vertical;
 	-webkit-justify-content:center;
-	    -ms-flex-pack:center;
-	    box-pack:center;
-	        justify-content:center;
+	-ms-flex-pack:center;
+	box-pack:center;
+	 -moz-box-pack:justify;
+	  -webkit-box-pack:justify; 
+	  -o-box-pack:justify; 
+	justify-content:center;
 }
 .module .module-content .module-content-1 .copywriter p span{
 }
@@ -320,6 +329,9 @@ nav>p:hover{
 	-webkit-justify-content:space-between;
 	-ms-flex-pack:justify;
 	box-pack:justify;
+	 -moz-box-pack:justify;
+	  -webkit-box-pack:justify; 
+	  -o-box-pack:justify; 
 	justify-content:space-between;
 }
 .article-area  h2{
@@ -342,6 +354,9 @@ nav>p:hover{
 	-webkit-justify-content:space-between;
 	-ms-flex-pack:justify;
 	box-pack:justify;
+	 -moz-box-pack:justify;
+	  -webkit-box-pack:justify; 
+	  -o-box-pack:justify; 
 	 justify-content:space-between;
 }
 .article-area .last-article section .image{
