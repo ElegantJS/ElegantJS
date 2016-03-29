@@ -34,8 +34,8 @@ nav{
 	display:flex;
 	display:-webkit-flex;
 	-webkit-flex-flow:row nowrap;
-	    -ms-flex-flow:row nowrap;
-	        flex-flow:row nowrap;
+	-ms-flex-flow:row nowrap;
+	 flex-flow:row nowrap;
 	background:#fff;
 }
 nav>p{
@@ -62,10 +62,11 @@ nav>p:hover{
 }
 .tab .tab-content{
 	display: -webkit-box;
-		    display: -moz-box;
-		    display: -o-box;
-		    display: -ms-flexbox;
-		    display: flex;
+	display: -webkit-flex;
+	 display: -moz-box;
+	 display: -o-box;
+	 display: -ms-flexbox;
+	 display: flex;
 	-webkit-flex-flow:row nowrap;
 	    -ms-flex-flow:row nowrap;
 	        flex-flow:row nowrap;
@@ -90,10 +91,11 @@ nav>p:hover{
 }
 .subfield{
 	display: -webkit-box;
-		    display: -moz-box;
-		    display: -o-box;
-		    display: -ms-flexbox;
-		    display: flex;
+	display: -webkit-flex;
+	display: -moz-box;
+	display: -o-box;
+	display: -ms-flexbox;
+	 display: flex;
 	-webkit-flex-flow:row nowrap;
 	    -ms-flex-flow:row nowrap;
 	        flex-flow:row nowrap;
@@ -110,6 +112,7 @@ nav>p:hover{
 	-ms-flex: 1;
 	 flex: 1;
 	display: -webkit-box;
+	display: -webkit-flex;
 	display: -moz-box;
 	 display: -o-box;
 	display: -ms-flexbox;
@@ -117,6 +120,10 @@ nav>p:hover{
 	-webkit-flex-flow:column nowrap;
 	    -ms-flex-flow:column nowrap;
 	        flex-flow:column nowrap;
+	 flex-derection:column;
+	 -moz-box-orient:vertical;
+	 -webkit-box-orient:vertical;
+	 box-orient:vertical;
 	-webkit-justify-content:space-between;
 	    -ms-flex-pack:justify;
 	        justify-content:space-between;
@@ -147,6 +154,7 @@ nav>p:hover{
 }
 .module .module-content{
 	display: -webkit-box;
+	display: -webkit-flex;
 	display: -moz-box;
 	display: -o-box;
 	display: -ms-flexbox;
@@ -154,10 +162,15 @@ nav>p:hover{
 	-webkit-flex-flow:column nowrap;
 	    -ms-flex-flow:column nowrap;
 	        flex-flow:column nowrap;
+	 flex-derection:column;
+	 -moz-box-orient:vertical;
+	 -webkit-box-orient:vertical;
+	 box-orient:vertical;
 	border-top: 1px solid #E1E1E1;
 }
 .module .module-content .module-content-1{
 	display: -webkit-box;
+	display: -webkit-flex;
 	display: -moz-box;
 	 display: -o-box;
 	display: -ms-flexbox;
@@ -188,13 +201,18 @@ nav>p:hover{
 	margin:10px 10px 0 0;
 	text-align: center;
 	display: -webkit-box;
-		    display: -moz-box;
-		    display: -o-box;
-		    display: -ms-flexbox;
-		    display: flex;
+	display: -webkit-flex;
+	display: -moz-box;
+	display: -o-box;
+	display: -ms-flexbox;
+	display: flex;
 	-webkit-flex-flow:column nowrap;
 	    -ms-flex-flow:column nowrap;
 	        flex-flow:column nowrap;
+	 flex-derection:column;
+	 -moz-box-orient:vertical;
+	 -webkit-box-orient:vertical;
+	 box-orient:vertical;
 	-webkit-justify-content:space-between;
 	    -ms-flex-pack:justify;
 	        justify-content:space-between;
@@ -211,13 +229,18 @@ nav>p:hover{
 	 flex: 1;
 	margin-bottom: 5%;
 	display: -webkit-box;
-		    display: -moz-box;
-		    display: -o-box;
-		    display: -ms-flexbox;
-		    display: flex;
+	display: -webkit-flex;
+	display: -moz-box;
+	display: -o-box;
+	display: -ms-flexbox;
+	display: flex;
 	-webkit-flex-flow:column nowrap;
 	    -ms-flex-flow:column nowrap;
 	        flex-flow:column nowrap;
+	 flex-derection:column;
+	 -moz-box-orient:vertical;
+	 -webkit-box-orient:vertical;
+	 box-orient:vertical;
 	-webkit-justify-content:center;
 	    -ms-flex-pack:center;
 	        justify-content:center;
@@ -232,6 +255,7 @@ nav>p:hover{
 	background:#fff;
 	padding:0 10px;
 	display: -webkit-box;
+	display: -webkit-flex;
 	display: -moz-box;
 	 display: -o-box;
 	display: -ms-flexbox;
@@ -239,9 +263,14 @@ nav>p:hover{
 	-webkit-flex-flow:column nowrap;
 	    -ms-flex-flow:column nowrap;
 	        flex-flow:column nowrap;
+	 flex-derection:column;
+	 -moz-box-orient:vertical;
+	 -webkit-box-orient:vertical;
+	 box-orient:vertical;
 }
 .article-area .article{
 	display: -webkit-box;
+	display: -webkit-flex;
 	display: -moz-box;
 	 display: -o-box;
 	display: -ms-flexbox;
@@ -270,6 +299,7 @@ nav>p:hover{
 	-ms-flex: 2;
 	 flex: 2;
 	display: -webkit-box;
+	display: -webkit-flex;
 	display: -moz-box;
 	 display: -o-box;
 	display: -ms-flexbox;
@@ -277,6 +307,10 @@ nav>p:hover{
 	-webkit-flex-flow:column nowrap;
 	    -ms-flex-flow:column nowrap;
 	        flex-flow:column nowrap;
+	 flex-derection:column;
+	 -moz-box-orient:vertical;
+	 -webkit-box-orient:vertical;
+	 box-orient:vertical;
 	-webkit-justify-content:space-between;
 	    -ms-flex-pack:justify;
 	        justify-content:space-between;
@@ -290,6 +324,7 @@ nav>p:hover{
 }
 .article-area .last-article section{
 	display: -webkit-box;
+	display: -webkit-flex;
 	display: -moz-box;
 	 display: -o-box;
 	display: -ms-flexbox;
