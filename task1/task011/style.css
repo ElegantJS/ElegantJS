@@ -36,6 +36,8 @@ nav{
 	display: -ms-flexbox;
 	 display: flex;
 	flex-flow:row nowrap;
+	felx-derection:row;
+	flex-wrap:nowrap;
 	background:#fff;
 }
 nav>p{
@@ -67,6 +69,8 @@ nav>p:hover{
 	display: -ms-flexbox;
 	 display: flex;
 	flex-flow:row nowrap;
+	felx-derection:row;
+	flex-wrap:nowrap;
 	margin:0 10px;
 	border-bottom: 2px solid #E1E1E1;
 }
@@ -93,6 +97,8 @@ nav>p:hover{
 	display: -ms-flexbox;
 	 display: flex;
 	flex-flow:row nowrap;
+	felx-derection:row;
+	flex-wrap:nowrap;
 	width:100%;
 	padding: 10px 10px;
 	background:#fff;
@@ -111,6 +117,8 @@ nav>p:hover{
 	display: -ms-flexbox;
 	 display: flex;
 	flex-flow:column nowrap;
+	felx-derection:column;
+	flex-wrap:nowrap;
 	-webkit-box-pack: space-between;
 	-moz-justify-content: space-between;
 	-webkit-justify-content: space-between;
@@ -147,6 +155,8 @@ nav>p:hover{
 	display: -ms-flexbox;
 	 display: flex;
 	flex-flow:column nowrap;
+	felx-derection:column;
+	flex-wrap:nowrap;
 	border-top: 1px solid #E1E1E1;
 }
 .module .module-content .module-content-1{
@@ -156,6 +166,8 @@ nav>p:hover{
 	display: -ms-flexbox;
 	 display: flex;
 	flex-flow:row nowrap;
+	felx-derection:row;
+	flex-wrap:nowrap;
 }
 .module .module-content .module-content-1 .image{
 	-moz-box-flex: 1;
@@ -184,6 +196,8 @@ nav>p:hover{
 	display: -ms-flexbox;
 	 display: flex;
 	flex-flow:column nowrap;
+	felx-derection:column;
+	flex-wrap:nowrap;
 	-webkit-box-pack: space-between;
 	-moz-justify-content: space-between;
 	-webkit-justify-content: space-between;
@@ -206,6 +220,8 @@ nav>p:hover{
 	display: -ms-flexbox;
 	 display: flex;
 	flex-flow:column nowrap;
+	felx-derection:column;
+	flex-wrap:nowrap;
 	-webkit-box-pack: center;
 	-moz-justify-content: center;
 	-webkit-justify-content: center;
@@ -226,6 +242,8 @@ nav>p:hover{
 	display: -ms-flexbox;
 	 display: flex;
 	flex-flow:column nowrap;
+	felx-derection:column;
+	flex-wrap:nowrap;
 }
 .article-area .article{
 	display: -webkit-box;
@@ -234,6 +252,8 @@ nav>p:hover{
 	display: -ms-flexbox;
 	 display: flex;
 	flex-flow:row nowrap;
+	felx-derection:row;
+	flex-wrap:nowrap;
 	padding:10px 0;
 	border-bottom: 1px solid #E1E1E1;
 }
@@ -260,6 +280,8 @@ nav>p:hover{
 	display: -ms-flexbox;
 	 display: flex;
 	flex-flow:column nowrap;
+	felx-derection:column;
+	flex-wrap:nowrap;
 	-webkit-box-pack: space-between;
 	-moz-justify-content: space-between;
 	-webkit-justify-content: space-between;
@@ -279,6 +301,8 @@ nav>p:hover{
 	display: -ms-flexbox;
 	 display: flex;
 	flex-flow:row nowrap;
+	felx-derection:row;
+	flex-wrap:nowrap;
 	-webkit-box-pack: space-between;
 	-moz-justify-content: space-between;
 	-webkit-justify-content: space-between;
