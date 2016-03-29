@@ -1,0 +1,531 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>使用HTML/CSS实现一个复杂页面</title>
+	<meta charset="UTF-8">
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+<div id="header">
+	<input type="text"></input>
+	<a href="#">登陆</a>
+</div>
+<div id="sidebar">
+	<div class="user-info">
+		<img src="images/touxiang.png" alt="touxiang">
+		<p class="user-name">E-JS</p>
+		<div class="collection">
+			<p>110</p>
+			<p>收藏</p>
+		</div>
+		<div class="fans">
+			<p>313</p>
+			<p>粉丝</p>
+		</div>
+	</div>
+	<ul class="main-list">
+			<li class="main-list-1">个人报表
+				<ul class="file-list">
+					<li class="file-1">文件一</li>
+					<li  class="file-2">文件二
+						<ul class="doc-list">
+							<li class="doc-list-1">文档一</li>
+							<li class="doc-list-2">文档二</li>
+						</ul>
+					</li>
+					<li  class="file-3">文件三</li>
+				</ul>
+			</li>
+			<li class="main-list-2">个人收藏</li>
+			<li class="main-list-3">我的分享</li>
+			<li class="main-list-4">图库</li>
+			<li class="main-list-5">称作记录</li>
+			<li class="main-list-6">账户信息</li>
+		</ul>
+</div>
+<div id="main">
+	<ul class="main-title">
+		<li>B站</li>
+		<li>/ 个人报表</li>
+		<li>/ 文件一</li>
+		<li>/ 文档一</li>
+	</ul>
+	<div class="main-content">
+		<form class="query">
+			<label for="query-item">查询项</label>
+			<select id="query-item">
+				<option>第一项</option>
+				<option>第二项</option>
+			</select>
+			<label for="buyer">买方</label>
+			<select id="buyer">
+				<option>小A</option>
+				<option>小B</option>
+			</select>
+			<label for="date">日期</label>
+			<input type="text" id="date" value="2016-03-26">
+			<label for="time">总耗时</label>
+			<select id="time">
+				<option>8天</option>
+				<option>9天</option>
+			</select>
+			<label for="seller" class="seller-label">卖方</label>
+			<select id="seller">
+				<option>小C</option>
+				<option>小D</option>
+			</select>
+			<label for="total-person">人数</label>
+			<select id="total-person">
+				<option>10人</option>
+				<option>20人</option>
+			</select>
+			<label for="auction-item">成交项</label>
+			<select id="auction-item">
+				<option>10项</option>
+				<option>20项</option>
+			</select>
+			<span class="change-word">换</span>
+			<button type="submit">搜索</button>
+		</form>
+		<ul class="time-list">
+			<li class="turn turn-left"></li>
+			<li class="time-item">
+				<ul>
+					<li>10:00 am</li>
+					<li>&yen;<span>1200</span></li>
+				</ul>
+			</li>
+			<li class="time-item">
+				<ul>
+					<li>11:00 am</li>
+					<li>&yen;<span>1300</span></li>
+				</ul>
+			</li>
+			<li class="time-item">
+				<ul>
+					<li>12:00 am</li>
+					<li>&yen;<span>1400</span></li>
+				</ul>
+			</li>
+			<li class="time-item">
+				<ul>
+					<li>01:00 pm</li>
+					<li>&yen;<span>1500</span></li>
+				</ul>
+			</li>
+			<li class="time-item">
+				<ul>
+					<li>02:00 pm</li>
+					<li>&yen;<span>1600</span></li>
+				</ul>
+			</li>
+			<li class="time-item">
+				<ul>
+					<li>03:00 pm</li>
+					<li>&yen;<span>1700</span></li>
+				</ul>
+			</li>
+			<li class="turn turn-right"></li>
+			<li class="history">历史查询</li>
+		</ul>
+		<ul class="statistic-list">
+			<p>2016年4月份统计</p>
+			<li class="statistic-item1">
+				<ul>
+					<li>133311</li>
+					<li>成交量</li>
+				</ul>
+				<p></p>
+			</li>
+			<li class="statistic-item2">
+				<ul>
+					<li>133311</li>
+					<li>成交量</li>
+				</ul>
+				<p></p>
+			</li>
+			<li class="statistic-item3">
+				<ul>
+					<li>133311</li>
+					<li>成交量</li>
+				</ul>
+				<p></p>
+			</li>
+			<li class="statistic-item4">
+				<ul>
+					<li>133311</li>
+					<li>成交量</li>
+				</ul>
+				<p></p>
+			</li>
+		</ul>
+		<ul class="project-list">
+			<li class="project-1">
+				<p class="project-title">第一组项目</p>
+				<ul>
+					<li>
+						<input id="tab1" type="radio" name="tab-check" checked>
+						<label for="tab1">项目一</label>
+						<table class="tab-content" border="1">
+							<tr>
+								<td>购买材料一</td>
+								<td>购买材料一</td>
+								<td>购买材料一</td>
+								<td>购买材料一</td>
+							</tr>
+							<tr>
+								<td>购买材料一</td>
+								<td>购买材料一</td>
+								<td>购买材料一</td>
+								<td>购买材料一</td>
+							</tr>
+							<tr>
+								<td>购买材料一</td>
+								<td>购买材料一</td>
+								<td>购买材料一</td>
+								<td>购买材料一</td>
+							</tr>
+							<tr>
+								<td>购买材料一</td>
+								<td>购买材料一</td>
+								<td>购买材料一</td>
+								<td>购买材料一</td>
+							</tr>
+							<tr>
+								<td>购买材料一</td>
+								<td>购买材料一</td>
+								<td>购买材料一</td>
+								<td>购买材料一</td>
+							</tr>
+							<tr>
+								<td>购买材料一</td>
+								<td>购买材料一</td>
+								<td>购买材料一</td>
+								<td>购买材料一</td>
+							</tr>
+						</table>
+					</li>
+					<li>
+						<input id="tab2" type="radio" name="tab-check" >
+						<label for="tab2">项目二</label>
+						<table class="tab-content" border="1">
+							<tr>
+								<td>购买材料二</td>
+								<td>购买材料二</td>
+								<td>购买材料二</td>
+								<td>购买材料二</td>
+							</tr>
+							<tr>
+								<td>购买材料二</td>
+								<td>购买材料二</td>
+								<td>购买材料二</td>
+								<td>购买材料二</td>
+							</tr>
+							<tr>
+								<td>购买材料二</td>
+								<td>购买材料二</td>
+								<td>购买材料二</td>
+								<td>购买材料二</td>
+							</tr>
+							<tr>
+								<td>购买材料二</td>
+								<td>购买材料二</td>
+								<td>购买材料二</td>
+								<td>购买材料二</td>
+							</tr>
+							<tr>
+								<td>购买材料二</td>
+								<td>购买材料二</td>
+								<td>购买材料二</td>
+								<td>购买材料二</td>
+							</tr>
+							<tr>
+								<td>购买材料二</td>
+								<td>购买材料二</td>
+								<td>购买材料二</td>
+								<td>购买材料二</td>
+							</tr>
+						</table>
+					</li>
+					<li>
+						<input id="tab3" type="radio" name="tab-check">
+						<label for="tab3">项目三</label>
+						<table class="tab-content" border="1">
+							<tr>
+								<td>购买材料三</td>
+								<td>购买材料三</td>
+								<td>购买材料三</td>
+								<td>购买材料三</td>
+							</tr>
+							<tr>
+								<td>购买材料三</td>
+								<td>购买材料三</td>
+								<td>购买材料三</td>
+								<td>购买材料三</td>
+							</tr>
+							<tr>
+								<td>购买材料三</td>
+								<td>购买材料三</td>
+								<td>购买材料三</td>
+								<td>购买材料三</td>
+							</tr>
+							<tr>
+								<td>购买材料三</td>
+								<td>购买材料三</td>
+								<td>购买材料三</td>
+								<td>购买材料三</td>
+							</tr>
+							<tr>
+								<td>购买材料三</td>
+								<td>购买材料三</td>
+								<td>购买材料三</td>
+								<td>购买材料三</td>
+							</tr>
+							<tr>
+								<td>购买材料三</td>
+								<td>购买材料三</td>
+								<td>购买材料三</td>
+								<td>购买材料三</td>
+							</tr>
+						</table>
+					</li>
+					<li>
+						<input id="tab4" type="radio" name="tab-check">
+						<label for="tab4">项目四</label>
+						<table class="tab-content" border="1">
+							<tr>
+								<td>购买材料四</td>
+								<td>购买材料四</td>
+								<td>购买材料四</td>
+								<td>购买材料四</td>
+							</tr>
+							<tr>
+								<td>购买材料四</td>
+								<td>购买材料四</td>
+								<td>购买材料四</td>
+								<td>购买材料四</td>
+							</tr>
+							<tr>
+								<td>购买材料四</td>
+								<td>购买材料四</td>
+								<td>购买材料四</td>
+								<td>购买材料四</td>
+							</tr>
+							<tr>
+								<td>购买材料四</td>
+								<td>购买材料四</td>
+								<td>购买材料四</td>
+								<td>购买材料四</td>
+							</tr>
+							<tr>
+								<td>购买材料四</td>
+								<td>购买材料四</td>
+								<td>购买材料四</td>
+								<td>购买材料四</td>
+							</tr>
+							<tr>
+								<td>购买材料四</td>
+								<td>购买材料四</td>
+								<td>购买材料四</td>
+								<td>购买材料四</td>
+							</tr>
+						</table>
+					</li>
+					<li>
+						<input id="tab5" type="radio" name="tab-check">
+						<label for="tab5">项目五</label>
+						<table class="tab-content" border="1">
+							<tr>
+								<td>购买材料五</td>
+								<td>购买材料五</td>
+								<td>购买材料五</td>
+								<td>购买材料五</td>
+							</tr>
+							<tr>
+								<td>购买材料五</td>
+								<td>购买材料五</td>
+								<td>购买材料五</td>
+								<td>购买材料五</td>
+							</tr>
+							<tr>
+								<td>购买材料五</td>
+								<td>购买材料五</td>
+								<td>购买材料五</td>
+								<td>购买材料五</td>
+							</tr>
+							<tr>
+								<td>购买材料五</td>
+								<td>购买材料五</td>
+								<td>购买材料五</td>
+								<td>购买材料五</td>
+							</tr>
+							<tr>
+								<td>购买材料五</td>
+								<td>购买材料五</td>
+								<td>购买材料五</td>
+								<td>购买材料五</td>
+							</tr>
+							<tr>
+								<td>购买材料五</td>
+								<td>购买材料五</td>
+								<td>购买材料五</td>
+								<td>购买材料五</td>
+							</tr>
+						</table>
+					</li>
+				</ul>
+				<div class="table-container"></div>
+			</li>
+			<li class="project-2">
+				<p class="project-title">第二组项目</p>
+				<ul>
+					<li class="title">项目报表一</li>
+					<li class="price">&yen;158</li>
+					<li class="response">小A</li>
+					<li class="detail">该项目目前负责人是......</li>
+				</ul>
+				<form>
+					<input type="checkbox" id="secrect" checked>
+					<label for="secrect">遵守保密协议</label>
+					<input type="submit" class="search" value="搜索"></input>
+				</form>
+			</li>
+			<li class="calendar">
+				<p class="project-title">日历</p>
+				<form>
+					<select class="year">
+						<option>2016年</option>
+						<option>2015年</option>
+					</select>
+					<select class="month">
+						<option>4月</option>
+						<option>3月</option>
+					</select class="mark-date">
+					<select>
+						<option>标注日期</option>
+						<option>今天</option>
+					</select>
+					<input type="button" value="返回今天">
+				</form>
+				<table>
+					<tr>
+						<th>一</th>
+						<th>二</th>
+						<th>三</th>
+						<th>四</th>
+						<th>五</th>
+						<th>六</th>
+						<th>日</th>
+					</tr>
+					<tr>
+						<td  class="blank"></td>
+						<td class="blank"></td>
+						<td class="blank"></td>
+						<td class="blank"></td>
+						<td class="festival">1 <p>愚人节</p></td>
+						<td class="weekend">2 <p>廿五</p></td>
+						<td class="weekend">3 <p>廿六</p></td>
+					</tr>
+					<tr>
+						<td>4 <p>廿七</p></td>
+						<td class="festival">5 <p>清明</p></td>
+						<td>6 <p>廿九</p></td>
+						<td>7 <p>三月</p></td>
+						<td>8 <p>初二</p></td>
+						<td class="weekend">9 <p>初三</p></td>
+						<td class="weekend">10 <p>初四</p></td>
+					</tr>
+					<tr>
+						<td>11 <p>初五</p></td>
+						<td>12 <p>初六</p></td>
+						<td>13 <p>初七</p></td>
+						<td>14 <p>初八</p></td>
+						<td>15 <p>初九</p></td>
+						<td class="weekend">16 <p>初十</p></td>
+						<td class="weekend">17 <p>十一</p></td>
+					</tr>
+					<tr>
+						<td>18 <p>十二</p></td>
+						<td>19 <p>十三</p></td>
+						<td>20 <p>十四</p></td>
+						<td>21 <p>十五</p></td>
+						<td>22 <p>十六</p></td>
+						<td class="weekend">23 <p>十七</p></td>
+						<td class="weekend">24 <p>十八</p></td>
+					</tr>
+					<tr>
+						<td>25 <p>十九</p></td>
+						<td>26 <p>廿十</p></td>
+						<td>27 <p>廿一</p></td>
+					<td>28 <p>廿二</p></td>
+						<td>29 <p>廿三</p></td>
+						<td class="weekend">30 <p>廿四</p></td>
+						<td class="blank"></td>
+					</tr>
+				</table>
+			</li>
+			<li class="car">
+				<p class="project-title">汽车行业品牌榜</p>
+				<table border="0">
+					<tr>
+						<th class="column-1">排名</th>
+						<th class="column-2">品牌</th>
+						<th class="column-3">搜索指数</th>
+					</tr>
+					<tr>
+						<td class="column-1">1</td>
+						<td class="column-2">大众</td>
+						<td class="column-3">48912001<progress max="100" value="85" class="progress-1"></td>
+					</tr>
+					<tr>
+						<td class="column-1">2</td>
+						<td class="column-2">丰田</td>
+						<td class="column-3">29307333<progress max="100" value="70" class="progress-2"></td>
+					</tr>
+					<tr>
+						<td class="column-1">3</td>
+						<td class="column-2">奥迪</td>
+						<td class="column-3">23139070<progress max="100" value="60" class="progress-3"></td>
+					</tr>
+					<tr>
+						<td class="column-1">4</td>
+						<td class="column-2">本田</td>
+						<td class="column-3">22885564<progress max="100" value="55" ></td>
+					</tr>
+					<tr>
+						<td class="column-1">5</td>
+						<td class="column-2">福特</td>
+						<td class="column-3">22324792<progress max="100" value="50"></td>
+					</tr>
+					<tr>
+						<td class="column-1">6</td>
+						<td class="column-2">宝马</td>
+						<td class="column-3">21444077<progress max="100" value="47"></td>
+					</tr>
+					<tr>
+						<td class="column-1">7</td>
+						<td class="column-2">现代</td>
+						<td class="column-3">20114969<progress max="100" value="44"></td>
+					</tr>
+					<tr>
+						<td class="column-1">8</td>
+						<td class="column-2">起亚</td>
+						<td class="column-3">19251680<progress max="100" value="41"></td>
+					</tr>
+					<tr>
+						<td class="column-1">9</td>
+						<td class="column-2">奔驰</td>
+						<td class="column-3">19172837<progress max="100" value="38"></td>
+					</tr>
+					<tr class="last-line">
+						<td class="column-1">10</td>
+						<td class="column-2">别克</td>
+						<td class="column-3">18544027<progress max="100" value="35"></progress></td>
+					</tr>
+				</table>
+			</li>
+		</ul>
+	</div>
+</div>
+</body>
+</html>

@@ -1,0 +1,89 @@
+*{
+	margin: 0;
+	padding:0;
+}
+ul{
+	list-style: none;
+}
+ul li{
+	height:48px;
+	border:1px solid #999;
+	background: #eee;
+	float:left;
+	box-sizing: border-box;
+	margin:20px 0 0 20px;
+}
+ul .num-1 , .num-2 , .num-3{
+	width:-webkit-calc((100% - 80px) / 3);
+	width:-webkit-calc((100% - 80px) / 3);
+	width: calc((100% - 80px) / 3);
+}
+ul .num-4,.num-6{
+	width:-webkit-calc((100% - 80px) / 4);
+	width:-webkit-calc((100% - 80px) / 4);
+	width: calc((100% - 80px) / 4);
+}
+ul .num-5{
+	width:-webkit-calc((100% - 80px) / 2);
+	width:-webkit-calc((100% - 80px) / 2);
+	width: calc((100% - 80px) / 2);
+}
+ul .num-7,.num-8{
+	width:-webkit-calc((100% - 120px) / 12);
+	width:-webkit-calc((100% - 120px) / 12);
+	width: calc((100% - 120px) / 12);
+}
+ul .num-9,.num-10{
+	width:-webkit-calc((100% - 120px) / 6);
+	width:-webkit-calc((100% - 120px) / 6);
+	width: calc((100% - 120px) / 6);
+}
+ul .num-11{
+	width:-webkit-calc((100% - 120px) / 2);
+	width:-webkit-calc((100% - 120px) / 2);
+	width: calc((100% - 120px) / 2);
+}
+/*当宽度小于等于768px时*/
+@media screen and (max-width:768px) {
+ul .num-1 , .num-2 {
+	width:-webkit-calc((100% - 60px) / 2);
+	width:-webkit-calc((100% - 60px) / 2);
+	width: calc((100% - 60px) / 2);
+}
+
+ul .num-3{
+	width:-webkit-calc(100% - 40px);
+	width:-webkit-calc(100% - 40px);
+	width: calc(100% - 40px);
+}
+ul .num-4,.num-6{
+	width:-webkit-calc((100% - 80px) / 4);
+	width:-webkit-calc((100% - 80px) / 4);
+	width: calc((100% - 80px) / 4);
+}
+ul .num-5{
+	width:-webkit-calc((100% - 80px) / 2);
+	width:-webkit-calc((100% - 80px) / 2);
+	width: calc((100% - 80px) / 2);
+}
+ul .num-7,.num-8{
+	width:-webkit-calc((100% - 80px) / 6);
+	width:-webkit-calc((100% - 80px) / 6);
+	width: calc((100% - 80px) / 6);
+}
+ul .num-9{
+	width:-webkit-calc((100% - 80px) / 1.5);
+	width:-webkit-calc((100% - 80px) / 1.5);
+	width: calc((100% - 80px) / 1.5);
+}
+ul .num-10{
+	width:-webkit-calc((100% - 60px) / 4);
+	width:-webkit-calc((100% - 60px) / 4);
+	width: calc((100% - 60px) / 4);
+}
+ ul .num-11{
+	width:-webkit-calc((100% - 60px) / 4);
+	width:-webkit-calc((100% - 60px) / 4);
+	width: calc((100% - 60px) / 4);
+}	
+}
