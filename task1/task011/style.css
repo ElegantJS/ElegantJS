@@ -111,7 +111,10 @@ nav>p:hover{
 	display: -ms-flexbox;
 	 display: flex;
 	flex-flow:column nowrap;
-	justify-content:space-between;
+	-webkit-box-pack: space-between;
+	-moz-justify-content: space-between;
+	-webkit-justify-content: space-between;
+	justify-content: space-between;
 }
 .subfield>section img{
 	width:100%;
@@ -181,7 +184,10 @@ nav>p:hover{
 	display: -ms-flexbox;
 	 display: flex;
 	flex-flow:column nowrap;
-	justify-content:space-between;
+	-webkit-box-pack: space-between;
+	-moz-justify-content: space-between;
+	-webkit-justify-content: space-between;
+	justify-content: space-between;
 }
 .module .module-content .module-content-1 .copywriter p{
 	background:#F8F8F8;
@@ -200,7 +206,10 @@ nav>p:hover{
 	display: -ms-flexbox;
 	 display: flex;
 	flex-flow:column nowrap;
-	justify-content:center;
+	-webkit-box-pack: center;
+	-moz-justify-content: center;
+	-webkit-justify-content: center;
+	justify-content: center;
 }
 .module .module-content .module-content-1 .copywriter p span{
 }
@@ -251,7 +260,10 @@ nav>p:hover{
 	display: -ms-flexbox;
 	 display: flex;
 	flex-flow:column nowrap;
-	justify-content:space-between;
+	-webkit-box-pack: space-between;
+	-moz-justify-content: space-between;
+	-webkit-justify-content: space-between;
+	justify-content: space-between;
 }
 .article-area  h2{
 	font-size: 22px;
@@ -267,7 +279,10 @@ nav>p:hover{
 	display: -ms-flexbox;
 	 display: flex;
 	flex-flow:row nowrap;
-	justify-content:space-between;
+	-webkit-box-pack: space-between;
+	-moz-justify-content: space-between;
+	-webkit-justify-content: space-between;
+	justify-content: space-between;
 }
 .article-area .last-article section .image{
 	-moz-box-flex: 1;
