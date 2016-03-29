@@ -252,6 +252,9 @@ nav>p:hover{
 	align-items: center;
 	-webkit-box-align: center;
 }
+.module .module-content .module-content-1 .copywriter p span{
+	margin:auto;
+}
 .module .module-content .module-content-1 .copywriter p:last-child{
 	margin-bottom: 0;
 }
