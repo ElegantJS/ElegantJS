@@ -38,7 +38,7 @@ nav{
 	 display: flex;
 	-webkit-flex-flow:row nowrap;
 	-ms-flex-flow:row nowrap;
-	 flex-flow:row nowrap;
+	flex-flow:row nowrap;
 	background:#fff;
 }
 nav>p{
@@ -71,8 +71,8 @@ nav>p:hover{
 	 display: -ms-flexbox;
 	 display: flex;
 	-webkit-flex-flow:row nowrap;
-	    -ms-flex-flow:row nowrap;
-	        flex-flow:row nowrap;
+	-ms-flex-flow:row nowrap;
+	flex-flow:row nowrap;
 	margin:0 10px;
 	border-bottom: 2px solid #E1E1E1;
 }
@@ -167,8 +167,8 @@ nav>p:hover{
 	display: -ms-flexbox;
 	display: flex;
 	-webkit-flex-flow:column nowrap;
-	    -ms-flex-flow:column nowrap;
-	        flex-flow:column nowrap;
+	-ms-flex-flow:column nowrap;
+	 flex-flow:column nowrap;
 	 flex-derection:column;
 	 -moz-box-orient:vertical;
 	 -webkit-box-orient:vertical;
@@ -245,22 +245,12 @@ nav>p:hover{
 	display: -o-box;
 	display: -ms-flexbox;
 	display: flex;
-	-webkit-flex-flow:column nowrap;
-	-ms-flex-flow:column nowrap;
-	  flex-flow:column nowrap;
-	 flex-derection:column;
-	 -moz-box-orient:vertical;
-	 -webkit-box-orient:vertical;
-	 box-orient:vertical;
-	-webkit-justify-content:center;
-	-ms-flex-pack:center;
-	box-pack:center;
-	 -moz-box-pack:justify;
-	  -webkit-box-pack:justify; 
-	  -o-box-pack:justify; 
-	justify-content:center;
-}
-.module .module-content .module-content-1 .copywriter p span{
+	-webkit-flex-flow:row nowrap;
+	-ms-flex-flow:row nowrap;
+	  flex-flow:row nowrap;
+	 flex-derection:row;
+	align-items: center;
+	-webkit-box-align: center;
 }
 .module .module-content .module-content-1 .copywriter p:last-child{
 	margin-bottom: 0;
