@@ -130,7 +130,7 @@ function initTagItem(){
 }
 //给tag输入框绑定点击事件处理程序
 function initTagInput(){
-	inputTag.addEventListener("keyup",tagInputProcess,false);
+	inputTag.addEventListener("keydown",tagInputProcess,false);
 }
 //初始化函数
 function init(){
