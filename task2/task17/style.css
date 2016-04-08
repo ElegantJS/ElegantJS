@@ -1,0 +1,132 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+body{
+	font-size: 12px;
+	font-family: "SimHei";
+	padding-top: 10px;
+	min-width: 800px;
+}
+fieldset{
+	border-radius: 10px;
+	width:35%;
+	margin:auto;
+	padding:10px;
+	margin-bottom: 10px;
+	box-sizing: border-box;
+	float:left;
+	margin-left: 10%;
+}
+fieldset legend{
+	font-size: 20px;
+}
+#form-gra-time input{
+	display: none;
+}
+#form-gra-time label{
+	width:50px;
+	height:50px;
+	border:1px solid;
+	line-height: 50px;
+	text-align: center;
+	font-size: 20px;
+	border-radius: 50%;
+	display:inline-block;
+	cursor:pointer;
+}
+#form-gra-time label.checked{
+	background: #999999;
+	color:#fff;
+}
+#form-gra-city{
+	height:97px;
+}
+#city-select{
+	width:100px;
+	height:30px;
+	font-size: 15px;
+	margin: 10px 0 0 10px;
+}
+#aqi-chart-wrap{
+	width:80%;
+	height:530px;
+	border:1px solid #6C6C6C;
+	border-radius: 10px;
+	margin:auto;
+	clear: both;
+	display:flex;
+	flex-flow:row nowrap;
+	align-items:flex-end;
+	justify-content:space-around;
+}
+@-webkit-keyframes "slideOn"{
+	from{
+		height:0;
+	}
+	10%{
+		height:10%;
+	}
+	20%{
+		height:20%;
+	}
+	30%{
+		height:30%;
+	}
+	40%{
+		height:40%;
+	}
+	50%{
+		height:50%;
+	}
+	60%{
+		height:60%;
+	}
+	70%{
+		height:70%;
+	}
+	80%{
+		height:80%;
+	}
+	90%{
+		height:90%;
+	}
+	to{
+		height:100%;
+	}
+}
+#aqi-chart-wrap p{
+	display:flex;
+	flex-flow:row nowrap;
+	align-items:flex-end;
+	cursor:pointer;
+	position: relative;
+}
+#aqi-chart-wrap p>span{
+	display:inline-block;
+	width:100%;
+	height:100%;
+	-webkit-animation-name:'slideOn';/*动画属性名，也就是我们前面keyframes定义的动画名*/
+     	-webkit-animation-duration: 0.6s;/*动画持续时间*/
+     	-webkit-animation-timing-function: linear; /*动画频率，和transition-timing-function是一样的*/
+     	-webkit-animation-iteration-count: 1;/*定义循环资料，infinite为无限次*/
+     	-webkit-animation-direction: normal;/*定义动画方式*/
+}
+#aqi-chart-wrap p .title{
+	position:absolute;
+	height:50px;
+	width:130px;
+	padding:10px;
+	box-sizing: border-box;
+	top:-60px;
+	left:0;
+	z-index: 999;
+	border:1px solid #000;
+	border-radius: 5px;
+	background:rgba(255,255,255,0.7);
+	visibility:hidden;
+
+}
+#aqi-chart-wrap p:hover .title{
+	visibility:visible;
+}

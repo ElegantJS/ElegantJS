@@ -1,0 +1,75 @@
+*{
+	margin: 0;
+	padding:0;
+	font-family: "SimHei";
+}
+label{
+	margin:40px auto 20px;
+	display: block;
+	width:400px;
+	font-size: 20px;
+	position:relative;
+}
+label>input{
+	height:26px;
+	width:200px;
+	font-size: 15px;
+}
+#alert{
+	width:170px;
+	height:20px;
+	font-size: 15px;
+	color:red;
+	position:absolute;
+	left:380px;
+	top:5px;
+}
+#button-area,#sort-area{
+	margin:auto;
+	width:500px;
+}
+#sort-area{
+	margin-top: 10px;
+}
+#button-area button,#sort-area button{
+	display: inline-block;
+	outline: none;
+	cursor: pointer;
+	text-align: center;
+	text-decoration: none;
+	font: 14px "SimHei";
+	padding: 7px 15px ;
+	-webkit-border-radius: .5em; 
+	-moz-border-radius: .5em;
+	border-radius: .5em;
+	-webkit-box-shadow: 0 1px 2px rgba(0,0,0,.2);
+	-moz-box-shadow: 0 1px 2px rgba(0,0,0,.2);
+	box-shadow: 0 1px 2px rgba(0,0,0,.2);
+}
+#button-area button:hover,#sort-area button:hover{
+  text-decoration: none;
+}
+#button-area button:active,#sort-area button:active{
+	position: relative;
+	top: 1px;
+}
+#num-List{
+	display:flex;
+	flex-flow:row nowrap;
+	align-items:flex-end;
+	list-style:none;
+	width:1200px;
+	margin:30px auto 0;
+	height:400px;
+}
+#num-List>li{
+	font-size: 12px;
+	margin-right:5px;
+	background: #9DFFCE;
+	width:20px;
+	text-align: center;
+	cursor:pointer;
+}
+#num-List>li.red{
+	background: red;
+}

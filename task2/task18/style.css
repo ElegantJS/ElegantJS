@@ -1,0 +1,69 @@
+*{
+	margin: 0;
+	padding:0;
+	font-family: "SimHei";
+}
+label{
+	margin:100px auto 20px;
+	display: block;
+	width:400px;
+	font-size: 20px;
+	position:relative;
+}
+label>input{
+	height:26px;
+	width:200px;
+	font-size: 20px;
+}
+#alert{
+	width:150px;
+	height:20px;
+	font-size: 15px;
+	color:red;
+	position:absolute;
+	left:380px;
+	top:5px;
+}
+#button-area{
+	margin:auto;
+	width:400px;
+}
+#button-area button{
+	display: inline-block;
+	outline: none;
+	cursor: pointer;
+	text-align: center;
+	text-decoration: none;
+	font: 14px "SimHei";
+	padding: 7px 15px ;
+	-webkit-border-radius: .5em; 
+	-moz-border-radius: .5em;
+	border-radius: .5em;
+	-webkit-box-shadow: 0 1px 2px rgba(0,0,0,.2);
+	-moz-box-shadow: 0 1px 2px rgba(0,0,0,.2);
+	box-shadow: 0 1px 2px rgba(0,0,0,.2);
+}
+#button-area button:hover{
+  text-decoration: none;
+}
+#button-area button:active{
+	position: relative;
+	top: 1px;
+}
+#num-List{
+	display:flex;
+	flex-flow:row wrap;
+	list-style:none;
+	width:600px;
+	margin:30px auto;
+}
+#num-List>li{
+	margin:0 20px 20px 0;
+	background: #9DFFCE;
+	width:40px;
+	height:40px;
+	line-height: 40px;
+	text-align: center;
+	border-radius: 5px;
+	cursor:pointer;
+}
