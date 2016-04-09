@@ -1,4 +1,5 @@
 var orderList=[],//用来保存遍历后节点
+      treeList=[],//保存有效div节点
       lastTime,//记录上次点击按钮时间
       treeNodes=document.getElementsByTagName("div"),
       buttonArea=document.getElementById("button-area"),
