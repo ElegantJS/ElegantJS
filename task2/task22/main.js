@@ -89,6 +89,7 @@ function animation(arr) {
 			arr[i].style.background="red";
 			i++;
 		}else{
+			alertText.innerHTML="";
 			clearInterval(clear);
 		}
 	}
