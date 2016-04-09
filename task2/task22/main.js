@@ -78,8 +78,9 @@ function BST(){
 //遍历动画函数
 function animation(arr) {
 	var i=0,
-	len=arr.length,
-	clear=setInterval(changeBg,500);
+	len=arr.length;
+	changeBg();
+	var clear=setInterval(changeBg,500);
 	function changeBg(){
 		for(var j=0;j<len;j++){
 			arr[j].style.background="#fff";
@@ -98,7 +99,7 @@ function buttonClick(){
 	timeList=[],
 	clickTime=new Date();
 		if(target.nodeName==="BUTTON"){
-			if(lastTime&&(clickTime.valueOf()-lastTime.valueOf())<7500){
+			if(lastTime&&(clickTime.valueOf()-lastTime.valueOf())<7600){
 				alertText.innerHTML="当前动画未结束，请稍后再试";
 				return;
 			}else{
