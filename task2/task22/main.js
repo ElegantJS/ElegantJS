@@ -4,6 +4,12 @@ var orderList=[],//用来保存遍历后节点
       buttonArea=document.getElementById("button-area"),
       alertText=document.getElementById("alert");
 
+//消除chrome中自动出现的shadow root对treeNodes的影响
+for (var i =0; i<treeNodes.length; i++) {
+	if(!treeNodes[i].className){
+		treeNodes.splice(i,1);
+	}
+}
 //生成二叉树节点函数
 function Node(data,left,right){
 	this.data=data;
