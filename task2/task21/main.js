@@ -2,7 +2,7 @@
 var inputList=[];
 //存放用户输入的tag列表
 var tagList=[];
-//获取input输入框和提示元素
+//获取input输入框和tag元素
 var input=document.getElementById("input"),
       inputTag=document.getElementById("tag"),
       numNode=document.getElementById("num-List"),
