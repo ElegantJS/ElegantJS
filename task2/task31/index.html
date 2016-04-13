@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>表单（三）联动</title>
+	<meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+<form id="form">
+	<div class="radio-area">
+		<input type="radio" id="undergraduate" name="student" class="radio" checked>
+		<span class="radio-style"></span>
+		<label for="undergraduate">在校生</label>
+	</div>
+	<div class="radio-area">
+		<input type="radio" id="graduate" name="student" class="radio">
+		<span class="radio-style"></span>
+		<label for="graduate">非在校生</label>
+	</div>
+	<div id="undergraduate-form">
+		<label>学校</label>
+		<select id="city">
+			<option selected>北京</option>
+			<option>南京</option>
+			<option>上海</option>
+		</select>
+		<select id="school"></select>
+	</div>
+	<div id="graduate-form">
+		<label>就业单位</label>
+		<input type="text">
+	</div>
+</form>
+<script type="text/javascript" src="main.js"></script>
+</body>
+</html>

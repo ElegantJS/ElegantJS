@@ -1,0 +1,82 @@
+*{
+	margin:0;
+	padding:0;
+}
+form{
+	width:800px;
+	height:600px;
+	margin:100px auto;
+	font-size: 20px;
+	font-family: "SimHei";
+	position:relative;
+}
+form .radio-area{
+	float:left;
+	margin-left: 120px;
+}
+
+form .radio{
+	width:20px;
+	height:20px;
+	position:absolute;
+	z-index: 999;
+	opacity: 0;
+	cursor: pointer;
+}
+form .radio:checked~.radio-style{
+	border:6px solid #3496fe;
+	box-shadow: 0 0 3px #3496fe;
+}
+form .radio-style{
+	width:20px;
+	height:20px;
+	display:inline-block;
+	box-sizing: border-box;
+	border:1px solid #999;
+	border-radius: 50%;
+	cursor: pointer;
+}
+form .radio-area>label{
+	vertical-align: top;
+}
+form #undergraduate-form{
+	clear:both;
+	position:absolute;
+	top:70px;
+	display:block;
+}
+form #undergraduate-form select{
+	width:150px;
+	height:30px;
+	font-size: 15px;
+	margin-left: 10px;
+	border-radius: 5px;
+	color:#999;
+	font-family: "SimHei";
+	border:1px solid #999;
+}
+form #undergraduate-form #school{
+	width:240px;
+}
+form #graduate-form{
+	position:absolute;
+	top:70px;
+	display:none;
+}
+form #graduate-form>input{
+	width:420px;
+	height:30px;
+	border-radius: 5px;
+	color:#999;
+	border:1px solid #999;
+	padding-left: 10px;
+	margin-left: 10px;
+	font-size: 15px;
+	font-family: "SimHei";
+}
+form #undergraduate-form>label,form #graduate-form>label{
+	width:100px;
+	display:inline-block;
+	text-align: right;
+	vertical-align: middle;
+}
