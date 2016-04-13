@@ -1,0 +1,62 @@
+*{
+	margin: 0;
+	padding:0;
+}
+#form{
+	width:700px;
+	margin:100px auto;
+	font-family: "SimHei";
+
+}
+#form label{
+	font-size: 25px;
+	line-height: 25px;
+	vertical-align: middle;
+	text-align: right;
+	width:100px;
+	display:inline-block;
+}
+#form input{
+	height:40px;
+	margin-left: 10px;
+	width:400px;
+	border-radius: 5px;
+	border:2px solid #A9A9A9;
+	font-size: 20px;
+	padding-left: 10px;
+	box-sizing: border-box;
+}
+#form input.wrong-input{
+	border-color:#ff0000;
+}
+#form input.right-input{
+	border-color:#62BC4B;
+}
+#form #validate{
+	height:40px;
+	width:100px;
+	border:none;
+	font-size: 20px;
+	font-weight: bold;
+	color:#fff;
+	background: #2E78B9;
+	cursor:pointer;
+	border-radius: 5px;
+	outline:none;margin-left: 415px;
+}
+#form #validate:active{
+	position:relative;
+	top:1px;
+}
+#form .tips{
+	margin:10px 0 10px 120px;
+	font-size: 20px;
+	height:23px;
+	color:#A9A9A9;
+}
+#form .tips.wrong-tip{
+	color:#ff0000;
+}
+#form .tips.right-tip{
+	color:#62BC4B;
+}

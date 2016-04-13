@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>多个表单项的动态校验</title>
+	<meta charset="UTF-8">
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+	<form id="form">
+		<label for="user-name">名称</label>
+		<input type="text" id="user-name"  placeholder="请输入用户名">
+		<p id="name-tip" class="tips"></p>
+		<label for="password">密码</label>
+		<input type="password" id="password"  placeholder="请输入密码" >
+		<p id="password-tip" class="tips"></p>
+		<label for="confirm-pwd">密码确认</label>
+		<input type="password" id="confirm-pwd"  placeholder="请确认密码" >
+		<p id="confirm-pwd-tip" class="tips"></p>
+		<label for="email">邮箱</label>
+		<input type="email" id="email"  placeholder="请输入邮箱" >
+		<p id="email-tip" class="tips"></p>
+		<label for="phone">手机</label>
+		<input type="phone" id="phone"  placeholder="请输入手机号码" >
+		<p id="phone-tip" class="tips"></p>
+		<button id="validate" type="button">验证</button>
+	</form>
+<script type="text/javascript" src="main.js"></script>
+</body>
+</html>
