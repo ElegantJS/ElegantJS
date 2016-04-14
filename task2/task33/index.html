@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>听指令的小方块（一）</title>
+	<meta charset="UTF-8">
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+	<div id="tip">
+		<p>您可以在输入框中允许输入如下指令：</p>
+		<p>GO：前进一格</p>
+		<p>TUN LEF：向左转（逆时针旋转90度）</p>
+		<p>TUN RIG：向右转（顺时针旋转90度）</p>
+		<p>TUN BAC：向右转（旋转180度）</p>
+		<p>注：不区分大小写</p>
+	</div>
+	<table id="board" >
+		<tr>
+			<td class="board-num"><div id="car" style="	top:160px;left:160px;transform:rotateZ(0deg);"><p></p></div></td>
+			<td class="board-num">1</td>
+			<td class="board-num">2</td>
+			<td class="board-num">3</td>
+			<td class="board-num">4</td>
+			<td class="board-num">5</td>
+			<td class="board-num">6</td>
+			<td class="board-num">7</td>
+			<td class="board-num">8</td>
+			<td class="board-num">9</td>
+			<td class="board-num">10</td>
+		</tr>
+		<tr>
+			<td class="board-num">1</td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+		</tr>
+		<tr>
+			<td class="board-num">2</td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+		</tr>
+		<tr>
+			<td class="board-num">3</td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+		</tr>
+		<tr>
+			<td class="board-num">4</td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+		</tr>
+		<tr>
+			<td class="board-num">5</td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+		</tr>
+		<tr>
+			<td class="board-num">6</td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+		</tr>
+		<tr>
+			<td class="board-num">7</td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+		</tr>
+		<tr>
+			<td class="board-num">8</td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+		</tr>
+		<tr>
+			<td class="board-num">9</td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+		</tr>
+		<tr>
+			<td class="board-num">10</td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+		</tr>
+	</table>
+	<form>
+		<input type="text" id="order" placeholder="请输入指令">
+		<input type="button" id="move" value="执行">
+	</form>
+	<script type="text/javascript" src="main.js"></script>
+</body>
+</html>
