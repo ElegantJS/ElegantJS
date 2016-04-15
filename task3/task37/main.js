@@ -89,12 +89,13 @@ var eventProgress=(function(){
 				surfaced.style.left=elePosition.x+"px";
 				surfaced.style.top=elePosition.y+"px";
 				surfaced.className="draging";
-				mouseOffset=getMouseOffset(event.target,event);
+				mouseOffset=getMouseOffset(surfaced,event);
 			},
 		//为surface设置拖拽事件处理程序
 		dragMoving:function(event){
 				var target=document.getElementsByClassName("draging")[0],
 				      mousePosition=getMousePosition(event);
+				event=event||window.event;
 				if(target!=null){
 				target.style.left=mousePosition.x-mouseOffset.x+"px";
 				target.style.top=mousePosition.y-mouseOffset.y+"px";
@@ -122,7 +123,7 @@ function bindDragFunc(){
 			eventProgress.dragStart(event);
 		}
 	},false);
-	elements.surfaced.addEventListener("mousemove",eventProgress.dragMoving,false);
+	document.addEventListener("mousemove",eventProgress.dragMoving,false);
 	elements.surfaced.addEventListener("mouseup",eventProgress.dragEnd,false);
 }
 //初始化函数
