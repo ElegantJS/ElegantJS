@@ -1,0 +1,62 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+body{
+	position: relative;
+	font-family: "SimHei";
+}
+#tip{
+	position:absolute;
+	left:40px;
+	top:40px;
+	line-height: 30px;
+}
+#board{
+	width:440px;
+	height:440px;
+	margin:40px auto 0;
+	border-collapse: collapse;
+	text-align: center;
+	font-family: "SimHei";
+	position: relative;
+}
+#board td{
+	width:40px;
+	height:40px;
+	box-sizing: border-box;	
+	border:1px solid #999;
+}
+#board td.board-num{
+	border:none;
+}
+#board #car {
+	position:absolute;
+	width:40px;
+	height:40px;
+	background: #9595FF;
+	transition:all 1s;
+}
+#board #car>p{
+	height:10px;
+	width:40px;
+	background:#FF7777;
+}
+form{
+	width:250px;
+	margin:20px auto;
+}
+form #order{
+	height:20px;
+}
+form  #move{
+	width:40px;
+	height:25px;
+	font-family: "SimHei";
+	border:none;
+	cursor:pointer;
+}
+form  #move:active{
+	position:relative;
+	top:1px;
+}
