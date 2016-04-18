@@ -1,0 +1,99 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+body{
+	position: relative;
+	font-family: "SimHei";
+	min-width: 1300px;
+}
+#tip{
+	position:absolute;
+	left:40px;
+	top:40px;
+	line-height: 30px;
+}
+#board{
+	width:440px;
+	height:440px;
+	margin:40px auto 0;
+	border-collapse: collapse;
+	text-align: center;
+	font-family: "SimHei";
+	position: relative;
+}
+#board td{
+	width:40px;
+	height:40px;
+	box-sizing: border-box;	
+	border:1px solid #999;
+}
+#board td.board-num{
+	border:none;
+}
+#board #car {
+	position:absolute;
+	width:40px;
+	height:40px;
+	background: #9595FF;
+	transition:all 1s;
+}
+#board #car>p{
+	height:10px;
+	width:40px;
+	background:#FF7777;
+}
+#order-area{
+	width:250px;
+	position:absolute;
+	left:75%;
+	top:100px;
+	margin:0;
+	padding:0;
+}
+#order-area #line-num{
+	float:left;
+	background:#999;
+	list-style: none;
+	height:200px;
+	box-sizing: border-box;
+	overflow:hidden;
+	position: absolute;
+	left:-25px;
+}
+#order-area #line-num li{
+	height:25px;
+	width:25px;
+	font-size: 20px;
+	line-height: 25px;
+	text-align: center;
+	color:#fff;
+	border-radius: 50%;
+}
+#order-area #line-num li.wrong{
+	background:#FF0000;
+}
+#order-area #order{
+	height:200px;
+	width:150px;
+	display:block;
+	box-sizing: border-box;
+	resize:none;
+	font-size: 20px;
+	line-height: 25px;
+	background:#000;
+	color:#00FF00;
+	outline: none;
+}
+#order-area  #move{
+	width:60px;
+	height:30px;
+	font-family: "SimHei";
+	border:none;
+	cursor:pointer;
+	margin:10px 70px;
+}
+#order-area  #move:active{
+	position:relative;
+	top:1px;
+}
