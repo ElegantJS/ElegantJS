@@ -1,0 +1,79 @@
+*{
+	margin: 0;
+	padding: 0;
+	background: #fff;
+}
+#button-area{
+	margin:50px auto 20px;
+	width:500px;
+	text-align: center;
+}
+#button-area input{
+	height:25px;
+}
+#button-area button{
+	display: inline-block;
+	outline: none;
+	cursor: pointer;
+	text-align: center;
+	text-decoration: none;
+	margin-bottom: 10px;
+	font: 14px "SimHei";
+	padding: 7px 15px ;
+	-webkit-border-radius: .5em; 
+	-moz-border-radius: .5em;
+	border-radius: .5em;
+	-webkit-box-shadow: 0 1px 2px rgba(0,0,0,.2);
+	-moz-box-shadow: 0 1px 2px rgba(0,0,0,.2);
+	box-shadow: 0 1px 2px rgba(0,0,0,.2);
+}
+#button-area button:hover{
+  text-decoration: none;
+}
+#button-area button:active{
+	position: relative;
+	top: 1px;
+}
+#container{
+	width:600px;
+	margin:0 auto;
+}
+#container div{
+	flex:1;
+	border:1px solid #000;
+	display:flex;
+	-webkit-flex-flow:column nowrap;
+	-ms-flex-flow:column nowrap;
+	flex-flow:column nowrap;
+	padding:10px 30px;
+	box-sizing: border-box;
+	margin:5px;
+	cursor:pointer;
+	position:relative;
+	display:none;
+}
+#container div .icon{
+	display:inline-block;
+	width:15px;
+	height:15px;
+	border:1px solid #000;
+	position:absolute;
+	left:7px;
+	top:10px;
+	font-size: 20px;
+	line-height: 15px;
+	text-align: center;
+}
+#container #first-level{
+	width:100%;
+	min-height:30px;
+	border:1px solid #000;
+	margin:auto;
+	display:block;
+}
+#container div.choosen{
+	background-color:#84FF84;
+}
+#first-level div:first-child{
+	margin-right: 5px;
+}
