@@ -33,8 +33,14 @@
 	background-repeat: no-repeat;
 	top:4px;
 }
+#table tr th span.up:hover{
+	background-image: url(images/arrow-top1.png);
+}
 #table tr th span.down{
 	background-image: url(images/arrow-down.png);
 	background-repeat: no-repeat;
 	top:19px;
+}
+#table tr th span.down:hover{
+	background-image: url(images/arrow-down1.png);
 }
