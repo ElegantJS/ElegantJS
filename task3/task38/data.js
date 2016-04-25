@@ -1,0 +1,52 @@
+var table=document.getElementById("table");
+var tableTitle={
+	list:[
+		{title:"姓名",
+		 name:"name",
+		 sortable:false},
+		{title:"语文",
+		 name:"chinese",
+		  sortable:true},
+		{title:"数学",
+		 name:"math",
+		  sortable:true},
+		{title:"英语",
+		 name:"english",
+		  sortable:true},
+		{title:"总计",
+		 name:"total",
+		  sortable:true},
+	]
+
+};
+var data=[
+	{
+		name:"小明",
+		chinese:85,
+		math:80,
+		english:90,
+		total:255
+	},
+	{
+		name:"小红",
+		chinese:80,
+		math:75,
+		english:90,
+		total:245
+	},
+	{
+		name:"小亮",
+		chinese:70,
+		math:65,
+		english:85,
+		total:220
+	},
+	{
+		name:"小虎",
+		chinese:65,
+		math:90,
+		english:95,
+		total:250
+	}
+];
+createTable(table,tableTitle,data);

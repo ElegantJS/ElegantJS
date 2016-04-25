@@ -1,0 +1,40 @@
+*{
+	margin:0;
+	padding: 0;
+}
+#table{
+	width:600px;
+	margin:100px auto;
+	border-collapse: collapse;
+	font-family: "SimHei";
+	font-size:20px;
+}
+#table tr{
+	height:40px;
+	text-align: center;
+}
+#table tr:first-child{
+	background: #333333;
+	color:#fff;
+}
+#table tr th{
+	position: relative;
+}
+#table tr th span{
+	display: inline-block;
+	position:absolute;
+	width:16px;
+	height:16px;
+	left:90px;
+	cursor:pointer;
+}
+#table tr th span.up{
+	background-image: url(images/arrow-top.png);
+	background-repeat: no-repeat;
+	top:4px;
+}
+#table tr th span.down{
+	background-image: url(images/arrow-down.png);
+	background-repeat: no-repeat;
+	top:19px;
+}
