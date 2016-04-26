@@ -1,0 +1,51 @@
+*{
+	margin:0;
+	padding: 0;
+}
+body{
+	height:2000px;
+}
+#table{
+	width:600px;
+	margin:100px auto;
+	border-collapse: collapse;
+	font-family: "SimHei";
+	font-size:20px;
+}
+#table.freezing{
+	margin:140px auto;
+}
+#table tr{
+	height:40px;
+	text-align: center;
+}
+#table tr td,#table tr th{
+	width:120px;
+	box-sizing: border-box;
+}
+#table tr:first-child{
+	background: #333333;
+	color:#fff;
+}
+#table tr.freezLine{
+	position:fixed;
+	top:0;
+	width:600px;
+
+}
+#table tr.freezLine th{
+	width:120px;
+	height:40px;
+	box-sizing: border-box;
+}
+#table tr th{
+	position: relative;
+}
+#table tr th span{
+	display: inline-block;
+	position:absolute;
+	width:16px;
+	height:16px;
+	left:90px;
+	cursor:pointer;
+}
