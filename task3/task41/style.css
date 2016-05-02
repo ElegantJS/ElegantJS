@@ -1,0 +1,84 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+#showDate{
+	float:left;
+	margin:50px 39% 0;
+	width:250px;
+	height:30px;
+	cursor:pointer;
+	border-radius: 5px;
+	border:1px solid #999;
+	padding-left: 30px;
+	box-sizing: border-box;
+	font-family: "SimHei";
+	font-size: 15px;
+	background-image: url(images/calendar.svg);
+	background-repeat: no-repeat;
+	background-position: 5px 5px;
+}
+#calendar{
+	margin:10px 40%;
+	width:210px;
+	background:#fff;
+	border:1px solid #999;
+	float:left;
+	font-family: "SimHei";
+}
+#calendar span{
+	width:210px;
+	height:30px;
+	float:left;
+	background:#C61B01;
+	color:#fff;
+	font-family: "SimHei";
+	font-weight: bold;
+	text-align: center;
+}
+#calendar span .btn{
+	display:inline-block;
+	width:10px;
+	height:30px;
+	cursor: pointer;
+	margin:0 10px;
+	line-height: 30px;
+}
+#calendar span .btn:first-child{
+	margin-left: 0;
+}
+#calendar a{
+	display:block;
+	float:left;
+	width:30px;
+	height:30px;
+	color:#999;
+	line-height: 30px;
+	text-align: center;
+	text-decoration: none;
+}
+#calendar a.day{
+	cursor:pointer;
+}
+#calendar a.day.choosen{
+	background:#C61B01;
+	color:#fff;
+}
+#calendar a.day.exceed{
+	background:#999;
+	color:#000;
+}
+#calendar a.weekend{
+	color:#f00;
+}
+#calendar a.weekend.exceed{
+	color:#000;
+}
+#calendar a.day:hover{
+	background:#C61B01;
+	color:#fff;
+}
+#calendar a.day.exceed:hover{
+	background:#999;
+	color:#000;
+}
