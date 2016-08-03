@@ -80,13 +80,13 @@
       function geo_success (position) {
         var latitude = position.coords.latitude;
         var longitude = position.coords.longitude;
-         loadMap (latitude,longitude);
-         $.getJSON("http://v.juhe.cn/weather/geo?format=2&key=5320e2c3ed6ca34147539f5030a3356c&lon="+longitude+"&lat="+latitude,
+        $.getJSON("http://v.juhe.cn/weather/geo?format=2&key=5320e2c3ed6ca34147539f5030a3356c&lon="+longitude+"&lat="+latitude,
           function (data) {
             if(data && data.resultcode =="200") {
               updateWeather(data.result);
             }
           });
+         loadMap (latitude,longitude);
       }
 
 $(document).ready(function () {
@@ -98,8 +98,7 @@ $(document).ready(function () {
       }
       $("#weatherBoard .currentWeather .btn").click(function() {
         var newCity = $("#weatherBoard .currentWeather .search").val();
-          map.centerAndZoom(newCity,10);
-          $.getJSON("http://v.juhe.cn/weather/index?format=2&cityname="+encodeURIComponent(newCity)+"&key=5320e2c3ed6ca34147539f5030a3356c",
+        $.getJSON("http://v.juhe.cn/weather/index?format=2&cityname="+encodeURIComponent(newCity)+"&key=5320e2c3ed6ca34147539f5030a3356c",
           function (data) {
             if(data && data.resultcode =="200") {
               updateWeather(data.result);
@@ -109,4 +108,5 @@ $(document).ready(function () {
           });
           $("#weatherBoard .currentWeather .search").val("");
       });
+          map.centerAndZoom(newCity,10);
 });
