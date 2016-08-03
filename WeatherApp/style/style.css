@@ -1,0 +1,94 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+html{
+    height:100%;
+}
+body{
+    height:100%;
+    margin:0px;
+    padding:0px;
+    font-family: "PingFangSC-Light", "Helvetica Neue", "Hiragino Sans GB", "Microsoft YaHei", "WenQuanYi Micro Hei", sans-serif;
+}
+#map {
+    height:100%;
+    margin:0px;
+    padding:0px
+}
+
+#weatherBoard {
+    width:400px;
+    height:100%;
+    padding: 20px 0 0 10px;
+    background:rgba(67,122,187,0.9);
+    position:absolute;
+    left:0;
+    top:0;
+    z-index: 10;
+}
+#weatherBoard .currentWeather .city {
+    font-size:34px;
+    color:#fff;
+    margin-left: 20px;
+}
+#weatherBoard .currentWeather .search{
+    margin: 10px 0 20px 20px;
+    width:60%;
+}
+#weatherBoard .currentWeather .btn {
+    margin: 10px 0 0 10px;
+}
+#weatherBoard .currentWeather .weatherImg {
+    width:100px;
+    height:100px;
+}
+#weatherBoard .currentWeather .curTemperature {
+    font-size:50px;
+    vertical-align: middle;
+    color:#fff;
+    cursor:pointer;
+
+}
+#weatherBoard .currentWeather .curText {
+    list-style: none;
+    color:#fff;
+}
+#weatherBoard .weatherInfo .weatherDetails{
+    list-style:none;
+    color:#fff;
+}
+#weatherBoard .forecastWeather {
+    color:#fff;
+}
+#weatherBoard hr {
+    width:91%;
+    border:none;
+    border-top:2px #6494D6;
+}
+#weatherBoard .forecastWeather p {
+    font-size:26px;
+}
+
+#weatherBoard .forecastWeather table {
+    margin-left:30px;
+}
+#weatherBoard .forecastWeather .weatherIcon {
+    widh:50px;
+    height:50px;
+    margin-left:10px;
+}
+#weatherBoard .forecastWeather .forecastText {
+    text-align: center;
+}
+#weatherBoard  .author {
+    position:absolute;
+    left:0;
+    bottom: 0;
+    text-align:center;
+    color:#fff;
+}
+#weatherBoard  .author a{
+    color:#fff;
+    text-decoration: underline;
+}
