@@ -71,7 +71,7 @@ body{
 }
 
 #weatherBoard .forecastWeather table {
-    margin-left:30px;
+    margin-left:20px;
 }
 #weatherBoard .forecastWeather .weatherIcon {
     widh:50px;

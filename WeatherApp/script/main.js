@@ -2,26 +2,26 @@
     var map = new BMap.Map("map");    // 创建Map实例
 
     //载入地图函数
-    function loadMap (lat,lon) {
-      lat = lat||59.915;
-      lon = lon ||116.404;
-      var ggPoint = new BMap.Point(lon, lat);
-      //将google地图中的经纬度转化为百度地图的经纬度
-      BMap.Convertor.translate(ggPoint, 2, function(point){
-            var marker = new BMap.Marker(point);
-            map.addOverlay(marker);
-            map.centerAndZoom(point, 13);
-            $(".BMap_noprint").remove();
-            $(".anchorBL").remove();
-            var geoc = new BMap.Geocoder();
-            geoc.getLocation(point, function(rs){
-              var addComp = rs.addressComponents;
-              //alert(addComp.province + ", " + addComp.city + ", " + addComp.district + ", " + addComp.street + ", " + addComp.streetNumber);
-              });
-            });
-      //map.centerAndZoom(new BMap.Point(lon, lat), 11);  // 初始化地图,设置中心点坐标和地图级别
-      //map.addControl(new BMap.MapTypeControl());   //添加地图类型控件
-      //逆地址解析
+    function loadMap (pos) {
+      if(Array.isArray(pos)) {
+          lat = pos[0]||59.915;
+          lon = pos[1] ||116.404;
+          var ggPoint = new BMap.Point(lon, lat);
+          //将google地图中的经纬度转化为百度地图的经纬度
+          BMap.Convertor.translate(ggPoint, 2, function(point){
+                var marker = new BMap.Marker(point);
+                map.addOverlay(marker);
+                map.centerAndZoom(point, 13);
+                $(".BMap_noprint").remove();
+                $(".anchorBL").remove();
+                var geoc = new BMap.Geocoder();
+                geoc.getLocation(point, function(rs){
+                  var addComp = rs.addressComponents;
+                  });
+          });
+      } else {
+          map.centerAndZoom(pos,10);
+      }
       map.setCurrentCity("北京");          // 设置地图显示的城市 此项是必须设置的
       map.enableScrollWheelZoom(true);     //开启鼠标滚轮缩放
       map.setMapStyle({//去除道路
@@ -37,6 +37,17 @@
             ]
       });
   }
+    //获取天气函数
+    function getWeather (cityName) {
+      $.getJSON("http://v.juhe.cn/weather/index?format=2&cityname="+encodeURIComponent(cityName)+"&key=5320e2c3ed6ca34147539f5030a3356c&callback=?",
+          function (data) {
+            if(data && data.resultcode =="200") {
+              updateWeather(data.result);
+            } else {
+              alert("请输入有效城市名");
+            }
+          });
+    }
 
   //更新天气函数
    function updateWeather (data) {
@@ -61,20 +72,14 @@
       }
      }
 
+     function updatePage(result){
+        var cityName = result.name;
+        getWeather (cityName);
+        loadMap(cityName);
+      }
      function geo_error (err) {
-        switch (err.code) {
-          case 1:
-                alert("用户拒绝请求位置信息");
-                break;
-          case 2:
-                alert("您的位置信息不可用");
-                break;
-          case 3:
-                alert("位置信息请求超时");
-                break;
-          default:
-                alert("未知错误");
-        }
+        var myCity = new BMap.LocalCity();
+        myCity.get(updatePage);
       }
 
       function geo_success (position) {
@@ -86,7 +91,7 @@
               updateWeather(data.result);
             }
           });
-         loadMap (latitude,longitude);
+         loadMap ([latitude,longitud]);
       }
 
 $(document).ready(function () {
@@ -98,15 +103,8 @@ $(document).ready(function () {
       }
       $("#weatherBoard .currentWeather .btn").click(function() {
         var newCity = $("#weatherBoard .currentWeather .search").val();
-        $.getJSON("http://v.juhe.cn/weather/index?format=2&cityname="+encodeURIComponent(newCity)+"&key=5320e2c3ed6ca34147539f5030a3356c&callback=?",
-          function (data) {
-            if(data && data.resultcode =="200") {
-              updateWeather(data.result);
-            } else {
-              alert("请输入有效城市名");
-            }
-          });
-          $("#weatherBoard .currentWeather .search").val("");
-          map.centerAndZoom(newCity,10);
+        $("#weatherBoard .currentWeather .search").val("");
+        getWeather (newCity);
+        map.centerAndZoom(newCity,11);
       });
 });
