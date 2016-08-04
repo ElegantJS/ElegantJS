@@ -80,7 +80,7 @@
       function geo_success (position) {
         var latitude = position.coords.latitude;
         var longitude = position.coords.longitude;
-        $.getJSON("http://v.juhe.cn/weather/geo?format=2&key=5320e2c3ed6ca34147539f5030a3356c&lon="+longitude+"&lat="+latitude,
+        $.getJSON("http://v.juhe.cn/weather/geo?format=2&key=5320e2c3ed6ca34147539f5030a3356c&lon="+longitude+"&lat="+latitude+"&callback=?",
           function (data) {
             if(data && data.resultcode =="200") {
               updateWeather(data.result);
