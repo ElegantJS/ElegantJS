@@ -91,7 +91,7 @@
               updateWeather(data.result);
             }
           });
-         loadMap ([latitude,longitud]);
+         loadMap ([latitude,longitude]);
       }
 
 $(document).ready(function () {
