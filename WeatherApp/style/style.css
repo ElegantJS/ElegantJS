@@ -26,11 +26,12 @@ body{
     left:0;
     top:0;
     z-index: 10;
+    box-sizing: border-box;
 }
 #weatherBoard .currentWeather .city {
     font-size:34px;
     color:#fff;
-    margin-left: 20px;
+    padding-left:40px;
 }
 #weatherBoard .currentWeather .search{
     margin: 10px 0 20px 20px;
@@ -84,7 +85,7 @@ body{
 #weatherBoard  .author {
     position:absolute;
     left:0;
-    bottom: 0;
+    bottom: 10px;
     text-align:center;
     color:#fff;
 }

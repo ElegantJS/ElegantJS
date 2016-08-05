@@ -8,18 +8,18 @@
 <title>Weather App</title>
 </head>
 <body>
-    <div id="weatherBoard" class="row">
-        <div class="currentWeather col-md-12 row">
-            <p class="city col-md-12"></p>
+    <div id="weatherBoard" class="container">
+        <div class="currentWeather row">
+            <p class="city col-md-12 row"></p>
             <div class="col-md-12 row">
-                <input type="text" name="search" class="search form-control col-md-7" placeholder="手动搜索(仅限县级以上城市)">
-                <button class="btn btn-default col-md-3" type="submit">搜索</button>
+                <input type="text" name="search" class="search form-control col-md-7  col-xs-7" placeholder="手动搜索(仅限县级以上城市)">
+                <button class="btn btn-default col-md-3 col-xs-3" type="submit">搜索</button>
             </div>
             <div class=" col-md-12 row">
-                <div class="col-md-4">
+                <div class="col-md-4 col-xs-4">
                 <img  class="weatherImg" src="images/00.png" alt="">
             </div>
-            <div class="col-md-8">
+            <div class="col-md-8 col-xs-8">
                 <span class="curTemperature">
                     <span class="temp"></span>
                     °C
@@ -35,8 +35,8 @@
             </div>
             </div>
         </div>
-        <div class="weatherInfo col-md-12 row">
-            <ul class="weatherDetails col-md-6">
+        <div class="weatherInfo row">
+            <ul class="weatherDetails col-md-6 col-xs-6">
                 <li>
                     <img src="images/能见度.png">
                     <span>
@@ -60,7 +60,7 @@
                     </span>
                 </li>
             </ul>
-            <ul class="weatherDetails col-md-6">
+            <ul class="weatherDetails col-md-6 col-xs-6">
                 <li>
                     <img src="images/风力.png">
                     <span>
@@ -85,7 +85,7 @@
             </ul>
         </div>
         <hr class="col-md-12" />
-        <div class="forecastWeather col-md-12 row">
+        <div class="forecastWeather row">
             <p class="col-md-12">未来三天天气：</p>
             <table class="col-md-12">
                 <tr class="col-md-12 row">
@@ -114,7 +114,7 @@
             </table>
             <div class="chart"></div>
         </div>
-        <p class="author col-md-12">by <a href="http://codepen.io/fantasydai/" target="_blank">fantasyDai</a></p>
+        <p class="author col-md-12 col-xs-12">by <a href="http://codepen.io/fantasydai/" target="_blank">fantasyDai</a></p>
     </div>
     <div id="map"></div>
     <script type="text/javascript" src="http://api.map.baidu.com/api?v=2.0&ak=TGk8bcRkMlFSdCNfL4MZqoCA8y18UVKW"></script>

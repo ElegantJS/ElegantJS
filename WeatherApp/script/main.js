@@ -96,6 +96,8 @@
       }
 
 $(document).ready(function () {
+      $("#weatherBoard").height($(document).height());
+      $("#map").height($(document).height());
       //定位当前经纬度
       if(navigator && navigator.geolocation) {
         navigator.geolocation.getCurrentPosition(geo_success,geo_error);
