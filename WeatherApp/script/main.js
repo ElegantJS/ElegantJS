@@ -80,6 +80,7 @@
      function geo_error (err) {
         var myCity = new BMap.LocalCity();
         myCity.get(updatePage);
+        alert("无法定位您的位置，已为您匹配当前所在城市");
       }
 
       function geo_success (position) {
