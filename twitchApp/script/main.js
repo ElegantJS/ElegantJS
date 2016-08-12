@@ -28,7 +28,7 @@ function renderLive (live){
     userIcon.after(" "+live.name);
     user.attr("title",live.name);
     liveTag.append(tagIcon);
-    tagIcon.after(" "+live.game||"unknow");
+    tagIcon.after(" "+(live.game||"unknow"));
     liveTag.attr("title",live.game);
     if(live.isOnline) {
         statusIcon.addClass("online");
