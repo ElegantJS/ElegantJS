@@ -1,0 +1,144 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body {
+    font-family: 'Open Sans', sans-serif;
+}
+header{
+    background-color: #0099CC;
+    overflow: hidden;
+}
+header .logo{
+    height:60px;
+    float:left;
+}
+header nav {
+    float:right;
+    margin-right: 20px;
+}
+header nav ul {
+    list-style: none;
+}
+header nav ul li {
+    float:left;
+    height:60px;
+    width:120px;
+    line-height: 60px;
+    text-align: center;
+    font-size: 30px;
+    color:#fff;
+    cursor:pointer;
+}
+header nav ul li.selected {
+    background-color:#99CCCC;
+    color:#0099CC;
+}
+.container {
+    width:100%;
+}
+.container .channel_container {
+    margin:30px 100px 0;
+}
+.container .channel_container .channel {
+    height:300px;
+    border:1px solid #000;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    text-align:center;
+    overflow:hidden;
+    position:relative;
+}
+.channel .liv-source{
+    text-decoration: none;
+    color:#000;
+}
+ .channel .preview-img {
+    width:100%;
+    height:200px;
+ }
+  .channel .liv-hover{
+    position:absolute;
+    width:100%;
+    height:200px;
+    left:0;
+    top:0;
+    background:rgba(0,0,0,0.3);
+    pointer-events:none;
+    display:none;
+  }
+.channel .liv-hover .hover-icon{
+    margin-top:80px;
+    color:#fff;
+   }
+.channel:hover {
+    box-shadow: 2px 2px 2px;
+}
+.channel:hover .liv-hover{
+    display:block;
+}
+ .channel .liv-mes {
+    position:relative;
+ }
+.liv-mes .liv-face {
+    width:60px;
+    height:60px;
+    overflow:hidden;
+    border:2px solid #fff;
+    border-radius:50%;
+    position:absolute;
+    left:4px;
+    top:-30px;
+}
+.liv-mes .liv-face .face-img {
+    width:100%;
+    height:100%;
+}
+.liv-mes .liv-title {
+    margin:10px 0 0 65px;
+    width:75%;
+    height:20px;
+    white-space:nowrap;
+    overflow:hidden;
+    text-overflow:ellipsis;
+}
+.liv-mes .liv-info{
+    overflow:hidden;
+    margin-top: 20px;
+    padding:0 10px;
+}
+.liv-mes .liv-info .ellipsis {
+    margin:0;
+    padding:0;
+    font-size:20px;
+    color:#000;
+    text-align:left;
+    float:left;
+  }
+  .liv-mes .liv-info .user{
+    width:40%;
+    white-space:nowrap;
+    overflow:hidden;
+    text-overflow:ellipsis;
+  }
+.liv-mes .liv-info .liv-tag {
+    float:right;
+    text-align:right;
+    width:60%;
+    white-space:nowrap;
+    overflow:hidden;
+    text-overflow:ellipsis;
+   }
+.liv-mes .liv-status{
+    padding-left: 10px;
+    text-align:left;
+}
+.liv-mes .liv-status .online {
+    color:#99CC66;
+}
+.liv-mes .liv-status .offline {
+    color:#666666;
+}
+.liv-mes .fa {
+    color:#666666;
+}
