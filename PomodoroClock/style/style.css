@@ -1,0 +1,105 @@
+*{
+    margin: 0;
+    padding:0;
+}
+body {
+    background-color: #2A2C31;
+    font-family: 'Open Sans', "Microsoft YaHei",sans-serif;
+}
+#container {
+    width:500px;
+    margin:50px auto;
+    color:#fff;
+    text-align: center;
+}
+#container h1{
+    font-size: 50px;
+    margin-bottom: 20px;
+}
+#container .setting {
+    width:100%;
+}
+.setting .length {
+    width:245px;
+    display:inline-block;
+    font-size:20px;
+    margin-bottom:20px;
+}
+.length .title {
+    margin-bottom:5px;
+}
+.length .value {
+    font-weight: bold;
+    font-size:30px;
+}
+.value .button {
+    display:inline-block;
+    width:30px;
+    cursor:pointer;
+}
+.value .button:hover {
+    color:#FF6A6A;
+}
+.value .button:active {
+    position:relative;
+    top:1px;
+}
+.break-length .title {
+    color:#2ECC71;
+}
+.mission-length .title {
+    color:#FF6A6A;
+}
+#container .pomodoro {
+    width:350px;
+    height:350px;
+    margin:0 auto;
+    border:3px solid ;
+    border-radius: 50%;
+    position:relative;
+    cursor:pointer;
+}
+#container .mission{
+    border-color: #FF6A6A;
+}
+#container .break {
+    border-color: #2ECC71;
+}
+.pomodoro .animate-area {
+    width:95%;
+    height:95%;
+    margin:2.5% auto;
+    vertical-align:middle;
+    border-radius:50%;
+    overflow: hidden;
+    position:relative;
+}
+.animate-area .animate {
+    position:absolute;
+    bottom:0;
+    margin:0 auto;
+    width:100%;
+}
+.animate-area .missionAm {
+    background-color:#FF6A6A;
+}
+.animate-area .breakAm {
+    background-color:#2ECC71;
+}
+.pomodoro .message {
+    width:200px;
+    height:70px;
+    position:absolute;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    margin:auto auto;
+    z-index: 10;
+}
+.message .time {
+    font-size:50px;
+}
+.message .tips{
+    font-size:15px;
+}
