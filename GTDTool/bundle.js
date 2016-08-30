@@ -38420,10 +38420,11 @@
 	        case Types.REMOVE_CLASS:
 	            return Object.assign({}, state, {
 	                classes: state.classes.filter(function (classItem, index) {
-	                    if (action.index === 0) {
-	                        alert("默认分类无法删除");
-	                        return true;
-	                    } else if (index === action.index) {
+	                    if (index === action.index) {
+	                        if (action.index === 0) {
+	                            alert("默认分类无法删除");
+	                            return true;
+	                        }
 	                        return false;
 	                    } else {
 	                        return true;
@@ -38988,7 +38989,7 @@
 
 
 	// module
-	exports.push([module.id, "*{margin: 0;\n            padding:0;\n}\nhtml{\n    height:100%;\n}\nbody{\n     height:100%;\n     min-width: 800px;\n     min-height: 500px;\n}\n#common__root___2SlRH {\n    height:100%;\n}", ""]);
+	exports.push([module.id, "*{margin: 0;\n    padding:0;\n}\nhtml{\n    height:100%;\n}\nbody{\n     height:100%;\n     min-width: 800px;\n     min-height: 500px;\n}\n#common__root___2SlRH {\n    height:100%;\n}", ""]);
 
 	// exports
 	exports.locals = {
