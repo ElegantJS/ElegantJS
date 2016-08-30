@@ -38989,7 +38989,7 @@
 
 
 	// module
-	exports.push([module.id, "*{margin: 0;\n    padding:0;\n}\nhtml{\n    height:100%;\n}\nbody{\n     height:100%;\n     min-width: 800px;\n     min-height: 500px;\n}\n#common__root___2SlRH {\n    height:100%;\n}", ""]);
+	exports.push([module.id, "*{margin: 0;\n    padding:0;\n}\nhtml{\n    height:100%;\n}\nbody{\n     height:100%;\n     min-width: 800px;\n     min-height: 500px;\n}\nbody:hover {\n    background-color: #fff;\n}\n#common__root___2SlRH {\n    height:100%;\n}", ""]);
 
 	// exports
 	exports.locals = {
