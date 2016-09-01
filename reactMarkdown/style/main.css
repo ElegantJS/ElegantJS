@@ -57,7 +57,7 @@ header ul li {
     resize:none;
     max-height: 600px;
     overflow-y: auto;
-    line-height:40px;
+    line-height:39px;
 }
 .right {
     box-sizing: border-box;
