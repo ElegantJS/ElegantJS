@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>ReactMarkdown</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="style/bootstrap.css">
+    <link rel="stylesheet" type="text/css" href="style/font-awesome.css">
+    <link rel="stylesheet" type="text/css" href="style/main.css">
+</head>
+<body>
+<div class="container-fluid"></div>
+<script src="build/react.js"></script>
+<script src="build/react-dom.js"></script>
+<script src="build/browser.min.js"></script>
+<script src="build/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/marked/0.3.2/marked.min.js"></script>
+<script type="text/babel">
+    var Header = React.createClass({
+        insertText:function (text,preStart,preEnd) {
+            var textArea = document.querySelector(".rawInput"),
+                value = textArea.value,
+                start = textArea.selectionStart,
+                end = textArea.selectionEnd,
+                newText,
+                newValue;
+            if (!(start == end)) {
+              newText = text.slice(0,preStart)+value.slice(start,end)+text.slice(preEnd);
+              preEnd = preStart + value.slice(start,end).length;
+            } else {
+              newText = text;
+            }
+            newValue =textArea.value = value.slice(0,start)+newText+value.slice(end);
+            textArea.setSelectionRange(start + preStart, start + preEnd);
+            this.props.updateValue(newValue );
+        },
+        handleClick:function (e) {
+        if (e.target.nodeName=="I") {
+          var name = e.target.title;
+          switch (name) {
+            case "加粗":
+              this.insertText("**粗体**",2,4);
+              break;
+            case "斜体":
+              this.insertText("_斜体_",1,3);
+              break;
+            case "超链接":
+              this.insertText("[链接文本](www.yourlink.com)", 1, 5);
+              break;
+            case "段落引用":
+              this.insertText("> 引用", 2, 4);
+              break;
+            case "代码样例":
+              this.insertText("```code block```", 3, 13);
+              break;
+            case "图片":
+              this.insertText("![alt](www.yourlink.com)", 2, 5);
+              break;
+            case "有序列表":
+              this.insertText("\n1. 有序列表项0\n2. 有序列表项1", 3, 9);
+              break;
+            case "无序列表":
+              this.insertText("- 无序列表项0\n- 无序列表项1", 2, 8);
+              break;
+            case "标题":
+              this.insertText("## 标题", 3, 5);
+              break;
+            case "编辑模式":
+              this.props.changeModule("edit");
+              break;
+            case "预览模式":
+              this.props.changeModule("eye");
+              break;
+            case "分屏模式":
+              this.props.changeModule("columns");
+              break;
+          }
+        }
+        },
+        render:function () {
+            return (
+                <header className="col-md-12 row" onClick={this.handleClick}>
+                  <ul className="col-md-6 col-xs-6 buttons-left">
+                      <li className="col-md-1 col-xs-1"><i className="fa fa-bold" title="加粗"></i></li>
+                      <li className="col-md-1 col-xs-1"><i className="fa fa-italic" title="斜体"></i></li>
+                      <li className="col-md-1 col-xs-1"><i className="fa fa-link" title="超链接"></i></li>
+                      <li className="col-md-1 col-xs-1"><i className="fa fa-quote-left" title="段落引用"></i></li>
+                      <li className="col-md-1 col-xs-1"><i className="fa fa-code" title="代码样例"></i></li>
+                      <li className="col-md-1 col-xs-1"><i className="fa fa-image" title="图片"></i></li>
+                      <li className="col-md-1 col-xs-1"><i className="fa fa-list-ol" title="有序列表"></i></li>
+                      <li className="col-md-1 col-xs-1"><i className="fa fa-list-ul" title="无序列表"></i></li>
+                      <li className="col-md-1 col-xs-1"><i className="fa fa-header" title="标题"></i></li>
+                  </ul>
+                  <ul className="col-md-6 col-xs-6 row buttons-right">
+                    <li className="col-md-1 col-xs-1"><i className="fa fa-edit" title="编辑模式"></i></li>
+                    <li className="col-md-1 col-xs-1"><i className="fa fa-columns" title="分屏模式"></i></li>
+                    <li className="col-md-1 col-xs-1"><i className="fa fa-eye" title="预览模式"></i></li>
+                  </ul>
+      </header>
+            );
+        }
+    });
+    var Main = React.createClass({
+      render:function (){
+        switch (this.props.module) {
+          case "columns":
+            return (
+              <div className="col-md-12 row main">
+              <div className="col-md-6 col-xs-6 left">
+              <RawInput value={this.props.value} updateValue={this.props.updateValue} />
+              </div>
+              <div className="col-md-6 col-xs-6 right">
+                <span dangerouslySetInnerHTML={this.props.transform(this.props.value)} />
+              </div>
+            </div>
+          );
+        case "eye":
+          return (
+          <div className="col-md-12 row main">
+            <div className="col-md-6 col-xs-6 hiddenLeft">
+            <RawInput value={this.props.value} updateValue={this.props.updateValue} />
+            </div>
+            <div className="col-md-12 col-xs-12 right">
+              <span dangerouslySetInnerHTML={this.props.transform(this.props.value)} />
+            </div>
+          </div>
+        );
+      case "edit":
+        return (
+          <div className="col-md-12 row main">
+            <div className="col-md-12 col-xs-12 Left">
+            <RawInput value={this.props.value} updateValue={this.props.updateValue} />
+            </div>
+            <div className="col-md-6 col-xs-6 hiddenRight">
+              <span dangerouslySetInnerHTML={this.props.transform(this.props.value)} />
+            </div>
+          </div>
+        );
+        }
+        
+      }
+    });
+    var RawInput = React.createClass({
+      update:function(){
+          var newValue=this.refs.inputValue.value;
+          this.props.updateValue(newValue);
+      },
+      render:function(){
+          return (<textarea rows="14" type="text" ref="inputValue" value={this.props.value} onChange={this.update} className="rawInput" autofocus />)
+      }
+    });
+    var App = React.createClass({
+        updateValue: function(newValue){
+            this.setState({
+                value:newValue
+            })
+        },
+        changeModule:function (newModule) {
+          this.setState({
+            module:newModule
+          })
+        },
+        tranformValue:function (value) {
+            var __html = marked(value, {sanitize: true});
+            return {
+             __html:__html
+            };
+        },
+        getInitialState:function () {
+            return {
+            value:"# 欢迎使用Markdown编辑阅读器\n------\n我们理解您需要更便捷更高效的工具记录思想，整理笔记、知识，并将其中承载的价值传播给他人，** Markdown** 是我们给出的答案 —— 们为记录思想和分享知识提供更专业的工具。 您可以使用 Markdown:\n> * 整理知识，学习笔记\n> * 发布日记，杂文，所见所想\n> * 撰写发布技术文稿（代码支持）\n\n ![markdown-logo](http://placehold.it/350x150)\n## 什么是 Markdown\nMarkdown 是一种方便记忆、书写的纯文本标记语言，用户可以使用这些标记符号以最小的输入代价生成极富表现力的文档：譬如您正在阅读的这份文档。它使用简单的符号标记不同的标题，分割不同的段落，**粗体** 或者 *斜体* 某些文字，更棒的是，它还可以\n### 1. 制作一份待办事宜\n- [ ] 支持以 PDF 格式导出文稿\n- [ ] 改进渲染算法，使用局部渲染技术提高渲染效率\n- [x] 新增 Todo 列表功能\n\n### 2. 高插入一段代码[^code]\n```python\n@requires_authorization\nclass SomeClass:\npass\nif __name__ == '__main__':\n# A comment\nprint 'hello world'\n```",
+            module:"columns"
+            }
+        },
+        render:function () {
+          return(
+           <div className="row root">
+                <Header updateValue = {this.updateValue} updateValue = {this.updateValue} changeModule ={this.changeModule} />
+                <Main  updateValue={this.updateValue}  value={this.state.value} transform={this.tranformValue}  module ={this.state.module} />
+            </div>
+          );
+        }
+    });
+
+    ReactDOM.render(<App />,document.querySelector(".container-fluid"));
+</script>
+</body>
+</html>
