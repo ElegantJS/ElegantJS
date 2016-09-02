@@ -36894,6 +36894,29 @@
 
 	function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
 
+	if (typeof Object.assign != 'function') {
+	    Object.assign = function (target) {
+	        'use strict';
+
+	        if (target == null) {
+	            throw new TypeError('Cannot convert undefined or null to object');
+	        }
+
+	        target = Object(target);
+	        for (var index = 1; index < arguments.length; index++) {
+	            var source = arguments[index];
+	            if (source != null) {
+	                for (var key in source) {
+	                    if (Object.prototype.hasOwnProperty.call(source, key)) {
+	                        target[key] = source[key];
+	                    }
+	                }
+	            }
+	        }
+	        return target;
+	    };
+	}
+
 	var List = function (_Component) {
 	    _inherits(List, _Component);
 
@@ -37799,7 +37822,7 @@
 	                this.refs.dateWarning.innerHTML = "";
 	                this.refs.textWarning.innerHTML = "";
 	                return;
-	            } else if (!this.props.location.state && this.findSameTitle(date, title)) {
+	            } else if (this.findSameTitle(date, title)) {
 	                this.refs.titleWarning.innerHTML = "当天已存在相同任务！";
 	                this.refs.dateWarning.innerHTML = "";
 	                this.refs.textWarning.innerHTML = "";
@@ -37876,7 +37899,7 @@
 	                            'p',
 	                            { className: _Edit2.default.dateBefore },
 	                            '任务时间：',
-	                            _react2.default.createElement('input', { className: _Edit2.default.write, ref: 'dateInput', defaultValue: data.date }),
+	                            _react2.default.createElement('input', { className: _Edit2.default.write, type: 'date', ref: 'dateInput', defaultValue: data.date }),
 	                            _react2.default.createElement('span', { className: _Edit2.default.warning, ref: 'dateWarning' })
 	                        )
 	                    ),
@@ -37919,7 +37942,7 @@
 	                            'p',
 	                            { className: _Edit2.default.dateBefore },
 	                            '任务时间：',
-	                            _react2.default.createElement('input', { className: _Edit2.default.write, ref: 'dateInput' }),
+	                            _react2.default.createElement('input', { className: _Edit2.default.write, type: 'date', ref: 'dateInput' }),
 	                            _react2.default.createElement('span', { className: _Edit2.default.warning, ref: 'dateWarning' })
 	                        )
 	                    ),
@@ -38404,6 +38427,29 @@
 	var Types = _interopRequireWildcard(_ActionType);
 
 	function _interopRequireWildcard(obj) { if (obj && obj.__esModule) { return obj; } else { var newObj = {}; if (obj != null) { for (var key in obj) { if (Object.prototype.hasOwnProperty.call(obj, key)) newObj[key] = obj[key]; } } newObj.default = obj; return newObj; } }
+
+	if (typeof Object.assign != 'function') {
+	    Object.assign = function (target) {
+	        'use strict';
+
+	        if (target == null) {
+	            throw new TypeError('Cannot convert undefined or null to object');
+	        }
+
+	        target = Object(target);
+	        for (var index = 1; index < arguments.length; index++) {
+	            var source = arguments[index];
+	            if (source != null) {
+	                for (var key in source) {
+	                    if (Object.prototype.hasOwnProperty.call(source, key)) {
+	                        target[key] = source[key];
+	                    }
+	                }
+	            }
+	        }
+	        return target;
+	    };
+	}
 
 	function rootReducer(state, action) {
 	    switch (action.type) {
